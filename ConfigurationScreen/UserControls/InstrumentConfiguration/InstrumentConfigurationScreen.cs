@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConfigurationScreen.Utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,180 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
 {
     public partial class InstrumentConfigurationScreen : UserControl
     {
+        public TextBox[] PSUControls;
+        public TextBox[] CANControls;
+        public TextBox[] DAQControls;
+        public TextBox[] ParameterControls;
+
+        private List<DeviceConfigurationParameters> devices = new List<DeviceConfigurationParameters>();
+
+
         public InstrumentConfigurationScreen()
         {
             InitializeComponent();
+
+            PSUControls = new TextBox[] { OCP_txtbox, OVP_txtbox, OPP_txtbox, MaxC_txtbox, MaxV_txtbox, MaxP_txtbox };
+            CANControls = new TextBox[] { TxID_txtbox, RxID_txtbox, Size_txtbox, DLLFilepath_txtbox };
+            DAQControls = new TextBox[] { DLLFilepath_txtbox };
+
+            ParameterControls = new TextBox[] { PortNumber_txtbox, SubnetMask_txtbox,BaudRate_txtbox,Parity_txtbox,DataBits_txtbox,StopBits_txtbox,OCP_txtbox,OVP_txtbox,OPP_txtbox,
+                                          MaxC_txtbox,MaxV_txtbox,MaxP_txtbox,TxID_txtbox,RxID_txtbox,Size_txtbox,DLLFilepath_txtbox };
+
+
+            DisableControls();
+            DisablePanel();
         }
+
+        private void DeviceType_cmbbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (DeviceType_cmbbox.SelectedItem != null && DeviceType_cmbbox.SelectedItem.ToString() == "PSU")
+            {
+                DisableControls();
+                EnableControls(PSUControls);
+            }
+
+            else if (DeviceType_cmbbox.SelectedItem != null && DeviceType_cmbbox.SelectedItem.ToString() == "CAN")
+            {
+                DisableControls();
+                EnableControls(CANControls);
+            }
+
+            else if (DeviceType_cmbbox.SelectedItem != null && (DeviceType_cmbbox.SelectedItem.ToString() == "DAQ" || DeviceType_cmbbox.SelectedItem.ToString() == "DMM"))
+            {
+                DisableControls();
+                EnableControls(DAQControls);
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            AddDevices();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            DeviceControls_panel.Enabled = true;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (DeviceList_grid.SelectedRows.Count == 1)
+            {
+                var result = MessageBox.Show("Are you sure you want to delete the selected device?", "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    int rowIndex = DeviceList_grid.SelectedRows[0].Index;
+                    devices.RemoveAt(rowIndex);
+                    DeviceList_grid.Rows.RemoveAt(rowIndex);
+                }
+            }
+            else if (DeviceList_grid.SelectedRows.Count > 1)
+            {
+                MessageBox.Show("Please select only one device at a time.", "Multiple Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("Please select one device to remove.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void EnableControls(TextBox[] controls)
+        {
+            foreach (var control in controls)
+            {
+                control.Enabled = true;
+            }
+        }
+
+        private void DisableControls()
+        {
+            foreach (var control in ParameterControls)
+            {
+                control.Enabled = false;
+            }
+        }
+
+        private void DisablePanel()
+        {
+            DeviceControls_panel.Enabled = false;
+        }
+
+        private void AddDevices()
+        {
+            DeviceConfigurationParameters device = new DeviceConfigurationParameters
+            {
+                DeviceName = DeviceName_txtbox.Text,
+                DeviceMake = DeviceMake_cmbbox.SelectedItem?.ToString(),
+                DeviceType = DeviceType_cmbbox.SelectedItem?.ToString(),
+                PollTimeout = (int)PollTimeout_numbox.Value,
+                InterfaceType = InterfaceType_cmbbox.SelectedItem?.ToString(),
+                VisaNetworkAddress = Visa_txtbox.Text,
+                OpenFP = OnlyFP_chkbox.Checked,
+                OnlyLaunch = OnlyLaunch_chkbox.Checked,
+                PortNumber = PortNumber_txtbox.Text,
+                SubnetMask = SubnetMask_txtbox.Text,
+                BaudRate = BaudRate_txtbox.Text,
+                Parity = Parity_txtbox.Text,
+                Databits = DataBits_txtbox.Text,
+                StopBit = StopBits_txtbox.Text,
+                OCP = OCP_txtbox.Text,
+                OVP = OVP_txtbox.Text,
+                OPP = OPP_txtbox.Text,
+                MaxC = MaxC_txtbox.Text,
+                MaxV = MaxV_txtbox.Text,
+                MaxP = MaxP_txtbox.Text,
+                TxID = TxID_txtbox.Text,
+                RxID = RxID_txtbox.Text,
+                Size = Size_txtbox.Text,
+                DLLFilePath = DLLFilepath_txtbox.Text,
+                CalibrationDate = CalibrationDate_box.Value,
+                CalibrationExpiryDate = CalibrationDateExpiry_box.Value,
+                CalibrationEnable = CalibrationEnable_chkbox.Checked,
+            };
+            devices.Add(device);
+
+            DeviceList_grid.Rows.Add(device.DeviceName);                                       // Update UI list with new device name
+
+            ClearControlInputs();
+
+            DisablePanel();
+
+            DisableControls();
+        }
+
+        private void ClearControlInputs()
+        {
+            DeviceName_txtbox.Text = "";
+            DeviceType_cmbbox.SelectedIndex = -1;
+            DeviceMake_cmbbox.SelectedIndex = -1;
+            PollTimeout_numbox.Value = 0;
+            InterfaceType_cmbbox.SelectedItem?.ToString();
+            Visa_txtbox.Text = " ";
+            OnlyFP_chkbox.Checked = false;
+            OnlyLaunch_chkbox.Checked = false;
+            PortNumber_txtbox.Text = " ";
+            SubnetMask_txtbox.Text = " ";
+            BaudRate_txtbox.Text = " ";
+            Parity_txtbox.Text = " ";
+            DataBits_txtbox.Text = " ";
+            StopBits_txtbox.Text = " ";
+            OCP_txtbox.Text = " ";
+            OVP_txtbox.Text = " ";
+            OPP_txtbox.Text = " ";
+            MaxC_txtbox.Text = " ";
+            MaxV_txtbox.Text = " ";
+            MaxP_txtbox.Text = " ";
+            TxID_txtbox.Text = " ";
+            RxID_txtbox.Text = " ";
+            Size_txtbox.Text = " ";
+            DLLFilepath_txtbox.Text = " ";
+            CalibrationDate_box.Value = DateTime.Today;
+            CalibrationDateExpiry_box.Value = DateTime.Today;
+            CalibrationEnable_chkbox.Checked = false;
+        }
+
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConfigurationScreen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b9223e0e007a5fd777725bf51a1ec519a8079d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConfigurationScreen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConfigurationScreen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

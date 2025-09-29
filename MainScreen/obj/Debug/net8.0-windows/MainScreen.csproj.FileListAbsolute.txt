@@ -21,3 +21,4 @@ C:\Users\prade\Desktop\C#_Projects\Project_Screen\MainScreen\obj\Debug\net8.0-wi
 C:\Users\prade\Desktop\C#_Projects\Project_Screen\MainScreen\obj\Debug\net8.0-windows\MainScreen.pdb
 C:\Users\prade\Desktop\C#_Projects\Project_Screen\MainScreen\obj\Debug\net8.0-windows\MainScreen.genruntimeconfig.cache
 C:\Users\prade\Desktop\C#_Projects\Project_Screen\MainScreen\obj\Debug\net8.0-windows\ref\MainScreen.dll
+C:\Users\prade\Desktop\C#_Projects\Project_Screen\MainScreen\obj\Debug\net8.0-windows\MainScreen.sourcelink.json

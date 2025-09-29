@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstrumentConfigurationScreen));
-            panel1 = new Panel();
+            DeviceControls_panel = new Panel();
             label22 = new Label();
             label20 = new Label();
             label16 = new Label();
@@ -54,19 +54,19 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
+            CalibrationDate_box = new DateTimePicker();
+            CalibrationDateExpiry_box = new DateTimePicker();
+            OnlyLaunch_chkbox = new CheckBox();
+            CalibrationEnable_chkbox = new CheckBox();
+            OnlyFP_chkbox = new CheckBox();
             PollTimeout_numbox = new NumericUpDown();
             OPP_txtbox = new TextBox();
             OVP_txtbox = new TextBox();
-            OPC_txtbox = new TextBox();
+            OCP_txtbox = new TextBox();
             MaxP_txtbox = new TextBox();
             MaxV_txtbox = new TextBox();
             MaxC_txtbox = new TextBox();
-            textBox18 = new TextBox();
+            DLLFilepath_txtbox = new TextBox();
             Size_txtbox = new TextBox();
             RxID_txtbox = new TextBox();
             TxID_txtbox = new TextBox();
@@ -81,80 +81,80 @@
             InterfaceType_cmbbox = new ComboBox();
             DeviceType_cmbbox = new ComboBox();
             DeviceMake_cmbbox = new ComboBox();
-            dataGridView1 = new DataGridView();
+            DeviceList_grid = new DataGridView();
+            DeviceAdded = new DataGridViewTextBoxColumn();
             label25 = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            DeviceAdded = new DataGridViewTextBoxColumn();
-            panel1.SuspendLayout();
+            DeviceControls_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PollTimeout_numbox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DeviceList_grid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // DeviceControls_panel
             // 
-            panel1.BorderStyle = BorderStyle.FixedSingle;
-            panel1.Controls.Add(label22);
-            panel1.Controls.Add(label20);
-            panel1.Controls.Add(label16);
-            panel1.Controls.Add(label11);
-            panel1.Controls.Add(label19);
-            panel1.Controls.Add(label15);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(label18);
-            panel1.Controls.Add(label14);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label21);
-            panel1.Controls.Add(label17);
-            panel1.Controls.Add(label13);
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(label12);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label24);
-            panel1.Controls.Add(label23);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(dateTimePicker2);
-            panel1.Controls.Add(checkBox3);
-            panel1.Controls.Add(checkBox2);
-            panel1.Controls.Add(checkBox1);
-            panel1.Controls.Add(PollTimeout_numbox);
-            panel1.Controls.Add(OPP_txtbox);
-            panel1.Controls.Add(OVP_txtbox);
-            panel1.Controls.Add(OPC_txtbox);
-            panel1.Controls.Add(MaxP_txtbox);
-            panel1.Controls.Add(MaxV_txtbox);
-            panel1.Controls.Add(MaxC_txtbox);
-            panel1.Controls.Add(textBox18);
-            panel1.Controls.Add(Size_txtbox);
-            panel1.Controls.Add(RxID_txtbox);
-            panel1.Controls.Add(TxID_txtbox);
-            panel1.Controls.Add(StopBits_txtbox);
-            panel1.Controls.Add(DataBits_txtbox);
-            panel1.Controls.Add(Parity_txtbox);
-            panel1.Controls.Add(BaudRate_txtbox);
-            panel1.Controls.Add(SubnetMask_txtbox);
-            panel1.Controls.Add(PortNumber_txtbox);
-            panel1.Controls.Add(Visa_txtbox);
-            panel1.Controls.Add(DeviceName_txtbox);
-            panel1.Controls.Add(InterfaceType_cmbbox);
-            panel1.Controls.Add(DeviceType_cmbbox);
-            panel1.Controls.Add(DeviceMake_cmbbox);
-            panel1.Location = new Point(629, 34);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(784, 608);
-            panel1.TabIndex = 0;
+            DeviceControls_panel.BorderStyle = BorderStyle.FixedSingle;
+            DeviceControls_panel.Controls.Add(label22);
+            DeviceControls_panel.Controls.Add(label20);
+            DeviceControls_panel.Controls.Add(label16);
+            DeviceControls_panel.Controls.Add(label11);
+            DeviceControls_panel.Controls.Add(label19);
+            DeviceControls_panel.Controls.Add(label15);
+            DeviceControls_panel.Controls.Add(label10);
+            DeviceControls_panel.Controls.Add(label18);
+            DeviceControls_panel.Controls.Add(label14);
+            DeviceControls_panel.Controls.Add(label9);
+            DeviceControls_panel.Controls.Add(label21);
+            DeviceControls_panel.Controls.Add(label17);
+            DeviceControls_panel.Controls.Add(label13);
+            DeviceControls_panel.Controls.Add(label8);
+            DeviceControls_panel.Controls.Add(label12);
+            DeviceControls_panel.Controls.Add(label7);
+            DeviceControls_panel.Controls.Add(label5);
+            DeviceControls_panel.Controls.Add(label6);
+            DeviceControls_panel.Controls.Add(label24);
+            DeviceControls_panel.Controls.Add(label23);
+            DeviceControls_panel.Controls.Add(label4);
+            DeviceControls_panel.Controls.Add(label3);
+            DeviceControls_panel.Controls.Add(label2);
+            DeviceControls_panel.Controls.Add(label1);
+            DeviceControls_panel.Controls.Add(CalibrationDate_box);
+            DeviceControls_panel.Controls.Add(CalibrationDateExpiry_box);
+            DeviceControls_panel.Controls.Add(OnlyLaunch_chkbox);
+            DeviceControls_panel.Controls.Add(CalibrationEnable_chkbox);
+            DeviceControls_panel.Controls.Add(OnlyFP_chkbox);
+            DeviceControls_panel.Controls.Add(PollTimeout_numbox);
+            DeviceControls_panel.Controls.Add(OPP_txtbox);
+            DeviceControls_panel.Controls.Add(OVP_txtbox);
+            DeviceControls_panel.Controls.Add(OCP_txtbox);
+            DeviceControls_panel.Controls.Add(MaxP_txtbox);
+            DeviceControls_panel.Controls.Add(MaxV_txtbox);
+            DeviceControls_panel.Controls.Add(MaxC_txtbox);
+            DeviceControls_panel.Controls.Add(DLLFilepath_txtbox);
+            DeviceControls_panel.Controls.Add(Size_txtbox);
+            DeviceControls_panel.Controls.Add(RxID_txtbox);
+            DeviceControls_panel.Controls.Add(TxID_txtbox);
+            DeviceControls_panel.Controls.Add(StopBits_txtbox);
+            DeviceControls_panel.Controls.Add(DataBits_txtbox);
+            DeviceControls_panel.Controls.Add(Parity_txtbox);
+            DeviceControls_panel.Controls.Add(BaudRate_txtbox);
+            DeviceControls_panel.Controls.Add(SubnetMask_txtbox);
+            DeviceControls_panel.Controls.Add(PortNumber_txtbox);
+            DeviceControls_panel.Controls.Add(Visa_txtbox);
+            DeviceControls_panel.Controls.Add(DeviceName_txtbox);
+            DeviceControls_panel.Controls.Add(InterfaceType_cmbbox);
+            DeviceControls_panel.Controls.Add(DeviceType_cmbbox);
+            DeviceControls_panel.Controls.Add(DeviceMake_cmbbox);
+            DeviceControls_panel.Location = new Point(629, 34);
+            DeviceControls_panel.Name = "DeviceControls_panel";
+            DeviceControls_panel.Size = new Size(784, 608);
+            DeviceControls_panel.TabIndex = 0;
             // 
             // label22
             // 
@@ -254,7 +254,7 @@
             label9.Name = "label9";
             label9.Size = new Size(42, 21);
             label9.TabIndex = 5;
-            label9.Text = "OPC";
+            label9.Text = "OCP";
             // 
             // label21
             // 
@@ -396,54 +396,54 @@
             label1.TabIndex = 5;
             label1.Text = "Device Make";
             // 
-            // dateTimePicker1
+            // CalibrationDate_box
             // 
-            dateTimePicker1.Font = new Font("Segoe UI", 12F);
-            dateTimePicker1.Location = new Point(548, 126);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 29);
-            dateTimePicker1.TabIndex = 4;
+            CalibrationDate_box.Font = new Font("Segoe UI", 12F);
+            CalibrationDate_box.Location = new Point(548, 126);
+            CalibrationDate_box.Name = "CalibrationDate_box";
+            CalibrationDate_box.Size = new Size(200, 29);
+            CalibrationDate_box.TabIndex = 4;
             // 
-            // dateTimePicker2
+            // CalibrationDateExpiry_box
             // 
-            dateTimePicker2.Font = new Font("Segoe UI", 12F);
-            dateTimePicker2.Location = new Point(548, 200);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(200, 29);
-            dateTimePicker2.TabIndex = 4;
+            CalibrationDateExpiry_box.Font = new Font("Segoe UI", 12F);
+            CalibrationDateExpiry_box.Location = new Point(548, 200);
+            CalibrationDateExpiry_box.Name = "CalibrationDateExpiry_box";
+            CalibrationDateExpiry_box.Size = new Size(200, 29);
+            CalibrationDateExpiry_box.TabIndex = 4;
             // 
-            // checkBox3
+            // OnlyLaunch_chkbox
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            checkBox3.Location = new Point(144, 259);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(124, 25);
-            checkBox3.TabIndex = 3;
-            checkBox3.Text = "Only Launch";
-            checkBox3.UseVisualStyleBackColor = true;
+            OnlyLaunch_chkbox.AutoSize = true;
+            OnlyLaunch_chkbox.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            OnlyLaunch_chkbox.Location = new Point(144, 259);
+            OnlyLaunch_chkbox.Name = "OnlyLaunch_chkbox";
+            OnlyLaunch_chkbox.Size = new Size(124, 25);
+            OnlyLaunch_chkbox.TabIndex = 3;
+            OnlyLaunch_chkbox.Text = "Only Launch";
+            OnlyLaunch_chkbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // CalibrationEnable_chkbox
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            checkBox2.Location = new Point(547, 52);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(170, 25);
-            checkBox2.TabIndex = 3;
-            checkBox2.Text = "Calibration Enable";
-            checkBox2.UseVisualStyleBackColor = true;
+            CalibrationEnable_chkbox.AutoSize = true;
+            CalibrationEnable_chkbox.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            CalibrationEnable_chkbox.Location = new Point(547, 52);
+            CalibrationEnable_chkbox.Name = "CalibrationEnable_chkbox";
+            CalibrationEnable_chkbox.Size = new Size(170, 25);
+            CalibrationEnable_chkbox.TabIndex = 3;
+            CalibrationEnable_chkbox.Text = "Calibration Enable";
+            CalibrationEnable_chkbox.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // OnlyFP_chkbox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            checkBox1.Location = new Point(28, 259);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(87, 25);
-            checkBox1.TabIndex = 3;
-            checkBox1.Text = "Only FP";
-            checkBox1.UseVisualStyleBackColor = true;
+            OnlyFP_chkbox.AutoSize = true;
+            OnlyFP_chkbox.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            OnlyFP_chkbox.Location = new Point(28, 259);
+            OnlyFP_chkbox.Name = "OnlyFP_chkbox";
+            OnlyFP_chkbox.Size = new Size(87, 25);
+            OnlyFP_chkbox.TabIndex = 3;
+            OnlyFP_chkbox.Text = "Only FP";
+            OnlyFP_chkbox.UseVisualStyleBackColor = true;
             // 
             // PollTimeout_numbox
             // 
@@ -469,13 +469,13 @@
             OVP_txtbox.Size = new Size(99, 29);
             OVP_txtbox.TabIndex = 1;
             // 
-            // OPC_txtbox
+            // OCP_txtbox
             // 
-            OPC_txtbox.Font = new Font("Segoe UI", 12F);
-            OPC_txtbox.Location = new Point(139, 403);
-            OPC_txtbox.Name = "OPC_txtbox";
-            OPC_txtbox.Size = new Size(99, 29);
-            OPC_txtbox.TabIndex = 1;
+            OCP_txtbox.Font = new Font("Segoe UI", 12F);
+            OCP_txtbox.Location = new Point(139, 403);
+            OCP_txtbox.Name = "OCP_txtbox";
+            OCP_txtbox.Size = new Size(99, 29);
+            OCP_txtbox.TabIndex = 1;
             // 
             // MaxP_txtbox
             // 
@@ -501,13 +501,13 @@
             MaxC_txtbox.Size = new Size(99, 29);
             MaxC_txtbox.TabIndex = 1;
             // 
-            // textBox18
+            // DLLFilepath_txtbox
             // 
-            textBox18.Font = new Font("Segoe UI", 12F);
-            textBox18.Location = new Point(139, 540);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(606, 29);
-            textBox18.TabIndex = 1;
+            DLLFilepath_txtbox.Font = new Font("Segoe UI", 12F);
+            DLLFilepath_txtbox.Location = new Point(139, 540);
+            DLLFilepath_txtbox.Name = "DLLFilepath_txtbox";
+            DLLFilepath_txtbox.Size = new Size(606, 29);
+            DLLFilepath_txtbox.TabIndex = 1;
             // 
             // Size_txtbox
             // 
@@ -599,8 +599,10 @@
             // 
             // InterfaceType_cmbbox
             // 
+            InterfaceType_cmbbox.DropDownStyle = ComboBoxStyle.DropDownList;
             InterfaceType_cmbbox.Font = new Font("Segoe UI", 12F);
             InterfaceType_cmbbox.FormattingEnabled = true;
+            InterfaceType_cmbbox.Items.AddRange(new object[] { "USB", "TCP/IP", "COM" });
             InterfaceType_cmbbox.Location = new Point(23, 200);
             InterfaceType_cmbbox.Name = "InterfaceType_cmbbox";
             InterfaceType_cmbbox.Size = new Size(232, 29);
@@ -608,15 +610,19 @@
             // 
             // DeviceType_cmbbox
             // 
+            DeviceType_cmbbox.DropDownStyle = ComboBoxStyle.DropDownList;
             DeviceType_cmbbox.Font = new Font("Segoe UI", 12F);
             DeviceType_cmbbox.FormattingEnabled = true;
+            DeviceType_cmbbox.Items.AddRange(new object[] { "DMM", "PSU", "DAQ", "CAN", "LOAD", "DSO", "PLC", "Database", "Barcode Scanner" });
             DeviceType_cmbbox.Location = new Point(280, 128);
             DeviceType_cmbbox.Name = "DeviceType_cmbbox";
             DeviceType_cmbbox.Size = new Size(237, 29);
             DeviceType_cmbbox.TabIndex = 0;
+            DeviceType_cmbbox.SelectedIndexChanged += DeviceType_cmbbox_SelectedIndexChanged;
             // 
             // DeviceMake_cmbbox
             // 
+            DeviceMake_cmbbox.BackColor = SystemColors.Window;
             DeviceMake_cmbbox.Font = new Font("Segoe UI", 12F);
             DeviceMake_cmbbox.FormattingEnabled = true;
             DeviceMake_cmbbox.Location = new Point(23, 53);
@@ -624,16 +630,24 @@
             DeviceMake_cmbbox.Size = new Size(232, 29);
             DeviceMake_cmbbox.TabIndex = 0;
             // 
-            // dataGridView1
+            // DeviceList_grid
             // 
-            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
-            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { DeviceAdded });
-            dataGridView1.Location = new Point(54, 34);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(423, 608);
-            dataGridView1.TabIndex = 1;
+            DeviceList_grid.BackgroundColor = SystemColors.ButtonHighlight;
+            DeviceList_grid.BorderStyle = BorderStyle.Fixed3D;
+            DeviceList_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DeviceList_grid.Columns.AddRange(new DataGridViewColumn[] { DeviceAdded });
+            DeviceList_grid.Location = new Point(54, 34);
+            DeviceList_grid.Name = "DeviceList_grid";
+            DeviceList_grid.ReadOnly = true;
+            DeviceList_grid.Size = new Size(423, 608);
+            DeviceList_grid.TabIndex = 1;
+            // 
+            // DeviceAdded
+            // 
+            DeviceAdded.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DeviceAdded.HeaderText = "Device Added";
+            DeviceAdded.Name = "DeviceAdded";
+            DeviceAdded.ReadOnly = true;
             // 
             // label25
             // 
@@ -648,48 +662,45 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(521, 161);
+            pictureBox1.Location = new Point(526, 239);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(63, 62);
+            pictureBox1.Size = new Size(54, 53);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(521, 246);
+            pictureBox2.Location = new Point(526, 322);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(63, 60);
+            pictureBox2.Size = new Size(54, 53);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(521, 326);
+            pictureBox3.Location = new Point(526, 402);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(63, 57);
+            pictureBox3.Size = new Size(54, 52);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(521, 404);
+            pictureBox4.Location = new Point(526, 480);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(63, 63);
+            pictureBox4.Size = new Size(54, 56);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 6;
             pictureBox4.TabStop = false;
-            // 
-            // DeviceAdded
-            // 
-            DeviceAdded.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DeviceAdded.HeaderText = "Device Added";
-            DeviceAdded.Name = "DeviceAdded";
             // 
             // InstrumentConfigurationScreen
             // 
@@ -701,14 +712,14 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(label25);
-            Controls.Add(dataGridView1);
-            Controls.Add(panel1);
+            Controls.Add(DeviceList_grid);
+            Controls.Add(DeviceControls_panel);
             Name = "InstrumentConfigurationScreen";
             Size = new Size(1467, 780);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            DeviceControls_panel.ResumeLayout(false);
+            DeviceControls_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)PollTimeout_numbox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DeviceList_grid).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -719,15 +730,15 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel DeviceControls_panel;
         private NumericUpDown PollTimeout_numbox;
         private TextBox DeviceName_txtbox;
         private ComboBox DeviceType_cmbbox;
         private ComboBox DeviceMake_cmbbox;
-        private DateTimePicker dateTimePicker2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
+        private DateTimePicker CalibrationDateExpiry_box;
+        private CheckBox OnlyLaunch_chkbox;
+        private CheckBox CalibrationEnable_chkbox;
+        private CheckBox OnlyFP_chkbox;
         private TextBox Visa_txtbox;
         private ComboBox InterfaceType_cmbbox;
         private Label label1;
@@ -752,7 +763,7 @@
         private Label label12;
         private TextBox OPP_txtbox;
         private TextBox OVP_txtbox;
-        private TextBox OPC_txtbox;
+        private TextBox OCP_txtbox;
         private TextBox MaxP_txtbox;
         private TextBox MaxV_txtbox;
         private TextBox MaxC_txtbox;
@@ -767,11 +778,11 @@
         private Label label21;
         private TextBox StopBits_txtbox;
         private Label label22;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox18;
+        private DateTimePicker CalibrationDate_box;
+        private TextBox DLLFilepath_txtbox;
         private Label label24;
         private Label label23;
-        private DataGridView dataGridView1;
+        private DataGridView DeviceList_grid;
         private Label label25;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
