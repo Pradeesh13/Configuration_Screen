@@ -37,6 +37,8 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
             DisablePanel();
         }
 
+
+        #region EventForms
         private void DeviceType_cmbbox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (DeviceType_cmbbox.SelectedItem != null && DeviceType_cmbbox.SelectedItem.ToString() == "PSU")
@@ -58,17 +60,18 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void NewFile_picbox(object sender, EventArgs e)
+        {
+            DeviceControls_panel.Enabled = true;
+            ClearControlInputs();
+        }
+
+        private void AddFile_picbox(object sender, EventArgs e)
         {
             AddDevices();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            DeviceControls_panel.Enabled = true;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void RemoveFile_picbox(object sender, EventArgs e)
         {
             if (DeviceList_grid.SelectedRows.Count == 1)
             {
@@ -81,6 +84,8 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
                     int rowIndex = DeviceList_grid.SelectedRows[0].Index;
                     devices.RemoveAt(rowIndex);
                     DeviceList_grid.Rows.RemoveAt(rowIndex);
+
+                    ClearControlInputs();
                 }
             }
             else if (DeviceList_grid.SelectedRows.Count > 1)
@@ -93,6 +98,47 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
             }
         }
 
+        private void DeviceList_grid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DeviceConfigurationParameters selectedDevice = devices[e.RowIndex];
+
+                DeviceName_txtbox.Text = selectedDevice.DeviceName;
+                DeviceType_cmbbox.SelectedItem = selectedDevice.DeviceType;
+                DeviceMake_cmbbox.SelectedItem = selectedDevice.DeviceMake;
+                PollTimeout_numbox.Value = selectedDevice.PollTimeout;
+                InterfaceType_cmbbox.SelectedItem = selectedDevice.InterfaceType;
+                Visa_txtbox.Text = selectedDevice.VisaNetworkAddress;
+                OnlyFP_chkbox.Checked = selectedDevice.OpenFP;
+                OnlyLaunch_chkbox.Checked = selectedDevice.OnlyLaunch;
+                PortNumber_txtbox.Text = selectedDevice.PortNumber;
+                SubnetMask_txtbox.Text = selectedDevice.SubnetMask;
+                BaudRate_txtbox.Text = selectedDevice.BaudRate;
+                Parity_txtbox.Text = selectedDevice.Parity;
+                DataBits_txtbox.Text = selectedDevice.Databits;
+                StopBits_txtbox.Text = selectedDevice.StopBit;
+                OCP_txtbox.Text = selectedDevice.OCP;
+                OVP_txtbox.Text = selectedDevice.OVP;
+                OPP_txtbox.Text = selectedDevice.OPP;
+                MaxC_txtbox.Text = selectedDevice.MaxC;
+                MaxV_txtbox.Text = selectedDevice.MaxV;
+                MaxP_txtbox.Text = selectedDevice.MaxP;
+                TxID_txtbox.Text = selectedDevice.TxID;
+                RxID_txtbox.Text = selectedDevice.RxID;
+                Size_txtbox.Text = selectedDevice.Size;
+                DLLFilepath_txtbox.Text = selectedDevice.DLLFilePath;
+                CalibrationDate_box.Value = selectedDevice.CalibrationDate ?? DateTime.Today;
+                CalibrationDateExpiry_box.Value = selectedDevice.CalibrationDate ?? DateTime.Today;
+                CalibrationEnable_chkbox.Checked = selectedDevice.CalibrationEnable;
+
+                DeviceControls_panel.Enabled = true;
+            }
+        }
+        #endregion
+
+
+        #region User methods
         private void EnableControls(TextBox[] controls)
         {
             foreach (var control in controls)
@@ -187,6 +233,7 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
             CalibrationDateExpiry_box.Value = DateTime.Today;
             CalibrationEnable_chkbox.Checked = false;
         }
+        #endregion
 
     }
 }

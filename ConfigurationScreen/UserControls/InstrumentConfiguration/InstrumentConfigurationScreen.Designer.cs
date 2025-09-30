@@ -641,6 +641,7 @@
             DeviceList_grid.ReadOnly = true;
             DeviceList_grid.Size = new Size(423, 608);
             DeviceList_grid.TabIndex = 1;
+            DeviceList_grid.CellClick += DeviceList_grid_CellClick;
             // 
             // DeviceAdded
             // 
@@ -668,7 +669,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.Click += NewFile_picbox;
             // 
             // pictureBox2
             // 
@@ -679,7 +680,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            pictureBox2.Click += AddFile_picbox;
             // 
             // pictureBox3
             // 
@@ -690,7 +691,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
+            pictureBox3.Click += RemoveFile_picbox;
             // 
             // pictureBox4
             // 
