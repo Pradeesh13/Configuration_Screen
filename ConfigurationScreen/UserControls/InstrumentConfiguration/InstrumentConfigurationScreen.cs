@@ -68,7 +68,14 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
 
         private void AddFile_picbox(object sender, EventArgs e)
         {
-            AddDevices();
+            if (string.IsNullOrWhiteSpace(DeviceName_txtbox.Text))
+            {
+                MessageBox.Show("Please enter the device name.", "Input Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                AddDevices();
+            }
         }
 
         private void RemoveFile_picbox(object sender, EventArgs e)
@@ -94,7 +101,53 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
             }
             else
             {
-                MessageBox.Show("Please select one device to remove.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select a device to remove.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void UpdateDevice_picbox_Click(object sender, EventArgs e)
+        {
+            if (DeviceList_grid.SelectedRows.Count == 1)
+            {
+                int rowIndex = DeviceList_grid.SelectedRows[0].Index;
+                if (rowIndex < 0 || rowIndex >= devices.Count)
+                    return;
+
+                DeviceConfigurationParameters device = devices[rowIndex];
+
+                device.DeviceName = DeviceName_txtbox.Text;
+                device.DeviceMake = DeviceMake_cmbbox.SelectedItem?.ToString();
+                device.DeviceType = DeviceType_cmbbox.SelectedItem?.ToString();
+                device.PollTimeout = (int)PollTimeout_numbox.Value;
+                device.InterfaceType = InterfaceType_cmbbox.SelectedItem?.ToString();
+                device.VisaNetworkAddress = Visa_txtbox.Text;
+                device.OpenFP = OnlyFP_chkbox.Checked;
+                device.OnlyLaunch = OnlyLaunch_chkbox.Checked;
+                device.PortNumber = PortNumber_txtbox.Text;
+                device.SubnetMask = SubnetMask_txtbox.Text;
+                device.BaudRate = BaudRate_txtbox.Text;
+                device.Parity = Parity_txtbox.Text;
+                device.Databits = DataBits_txtbox.Text;
+                device.StopBit = StopBits_txtbox.Text;
+                device.OCP = OCP_txtbox.Text;
+                device.OVP = OVP_txtbox.Text;
+                device.OPP = OPP_txtbox.Text;
+                device.MaxC = MaxC_txtbox.Text;
+                device.MaxV = MaxV_txtbox.Text;
+                device.MaxP = MaxP_txtbox.Text;
+                device.TxID = TxID_txtbox.Text;
+                device.RxID = RxID_txtbox.Text;
+                device.Size = Size_txtbox.Text;
+                device.DLLFilePath = DLLFilepath_txtbox.Text;
+                device.CalibrationDate = CalibrationDate_box.Value;
+                device.CalibrationExpiryDate = CalibrationDateExpiry_box.Value;
+                device.CalibrationEnable = CalibrationEnable_chkbox.Checked;
+
+                DeviceList_grid.Rows[rowIndex].Cells[0].Value = device.DeviceName;
+            }
+            else
+            {
+                MessageBox.Show("Please select one device to update.", "Update", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -209,7 +262,7 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
             DeviceType_cmbbox.SelectedIndex = -1;
             DeviceMake_cmbbox.SelectedIndex = -1;
             PollTimeout_numbox.Value = 0;
-            InterfaceType_cmbbox.SelectedItem?.ToString();
+            InterfaceType_cmbbox.SelectedIndex = -1;
             Visa_txtbox.Text = " ";
             OnlyFP_chkbox.Checked = false;
             OnlyLaunch_chkbox.Checked = false;
@@ -233,7 +286,8 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
             CalibrationDateExpiry_box.Value = DateTime.Today;
             CalibrationEnable_chkbox.Checked = false;
         }
-        #endregion
 
+        #endregion
     }
+        
 }

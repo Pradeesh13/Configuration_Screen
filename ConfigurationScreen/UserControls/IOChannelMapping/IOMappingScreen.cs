@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ConfigurationScreen.UserControls.UserConfiguration
+namespace ConfigurationScreen.UserControls.IOChannelMapping
 {
-    public partial class UserConfiguration : UserControl
+    public partial class IOMappingScreen : UserControl
     {
-        public UserConfiguration()
+        public IOMappingScreen()
         {
             InitializeComponent();
         }

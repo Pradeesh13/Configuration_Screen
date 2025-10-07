@@ -7,7 +7,16 @@
     <Compile Update="UserControls\InstrumentConfiguration\InstrumentConfigurationScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControls\UserConfiguration\UserConfiguration.cs">
+    <Compile Update="UserControls\IOChannelMapping\IOChannelMappingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\IOChannelMapping\ChannelMappinScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\IOChannelMapping\IOMappingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\UserConfiguration\UserConfigurationScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

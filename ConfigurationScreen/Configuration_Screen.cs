@@ -39,7 +39,7 @@ namespace ConfigurationScreen
         {
             Config_panel.Controls.Clear();
 
-            UserConfiguration UserConfig_Panel = new UserConfiguration();
+            UserConfigurationScreen UserConfig_Panel = new UserConfigurationScreen();
 
             Config_panel.Controls.Add(UserConfig_Panel);
 

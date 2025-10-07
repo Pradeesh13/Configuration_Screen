@@ -87,14 +87,14 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            UpdateDevice_picbox = new PictureBox();
             DeviceControls_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PollTimeout_numbox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DeviceList_grid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)UpdateDevice_picbox).BeginInit();
             SuspendLayout();
             // 
             // DeviceControls_panel
@@ -632,6 +632,8 @@
             // 
             // DeviceList_grid
             // 
+            DeviceList_grid.AllowUserToAddRows = false;
+            DeviceList_grid.AllowUserToDeleteRows = false;
             DeviceList_grid.BackgroundColor = SystemColors.ButtonHighlight;
             DeviceList_grid.BorderStyle = BorderStyle.Fixed3D;
             DeviceList_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -674,9 +676,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(526, 322);
+            pictureBox2.Location = new Point(530, 328);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(54, 53);
+            pictureBox2.Size = new Size(45, 44);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
@@ -685,30 +687,31 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(526, 402);
+            pictureBox3.Location = new Point(530, 402);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(54, 52);
+            pictureBox3.Size = new Size(45, 45);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
             pictureBox3.Click += RemoveFile_picbox;
             // 
-            // pictureBox4
+            // UpdateDevice_picbox
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(526, 480);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(54, 56);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 6;
-            pictureBox4.TabStop = false;
+            UpdateDevice_picbox.Image = (Image)resources.GetObject("UpdateDevice_picbox.Image");
+            UpdateDevice_picbox.Location = new Point(527, 480);
+            UpdateDevice_picbox.Name = "UpdateDevice_picbox";
+            UpdateDevice_picbox.Size = new Size(54, 56);
+            UpdateDevice_picbox.SizeMode = PictureBoxSizeMode.StretchImage;
+            UpdateDevice_picbox.TabIndex = 6;
+            UpdateDevice_picbox.TabStop = false;
+            UpdateDevice_picbox.Click += UpdateDevice_picbox_Click;
             // 
             // InstrumentConfigurationScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(pictureBox4);
+            Controls.Add(UpdateDevice_picbox);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -724,7 +727,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)UpdateDevice_picbox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -788,7 +791,7 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
+        private PictureBox UpdateDevice_picbox;
         private DataGridViewTextBoxColumn DeviceAdded;
     }
 }

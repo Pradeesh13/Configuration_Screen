@@ -17,4 +17,7 @@ C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\
 C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.genruntimeconfig.cache
 C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ref\ConfigurationScreen.dll
 C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.sourcelink.json
-C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.UserConfiguration.UserConfiguration.resources
+C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.ChannelMappinScreen.resources
+C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.IOChannelMappingScreen.resources
+C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.UserConfiguration.UserConfigurationScreen.resources
+C:\Users\prade\Desktop\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.IOMappingScreen.resources
