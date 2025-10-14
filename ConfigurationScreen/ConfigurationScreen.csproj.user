@@ -4,6 +4,9 @@
     <Compile Update="Configuration_Screen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LoginForm\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UserControls\InstrumentConfiguration\InstrumentConfigurationScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -14,6 +17,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControls\IOChannelMapping\IOMappingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\LoginControl\MainLoginScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\LoginControl\PasswordResetScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControls\UserConfiguration\UserConfigurationScreen.cs">

@@ -10,6 +10,7 @@ namespace ConfigurationScreen
             InitializeComponent();
         }
 
+        #region Form Events
         private void InstrumentConfig_btn_Click(object sender, EventArgs e)
         {
             Config_panel.Controls.Clear();
@@ -45,5 +46,6 @@ namespace ConfigurationScreen
 
             Config_panel.Visible = true;
         }
+        #endregion
     }
 }

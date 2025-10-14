@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserConfigurationScreen));
             UserLevel_cmbbox = new ComboBox();
             UserName_txtbox = new TextBox();
@@ -56,6 +56,7 @@
             // 
             // UserLevel_cmbbox
             // 
+            UserLevel_cmbbox.BackColor = Color.LightGray;
             UserLevel_cmbbox.DropDownStyle = ComboBoxStyle.DropDownList;
             UserLevel_cmbbox.Font = new Font("Microsoft Sans Serif", 12F);
             UserLevel_cmbbox.FormattingEnabled = true;
@@ -67,6 +68,7 @@
             // 
             // UserName_txtbox
             // 
+            UserName_txtbox.BackColor = Color.LightGray;
             UserName_txtbox.Font = new Font("Microsoft Sans Serif", 12F);
             UserName_txtbox.Location = new Point(341, 370);
             UserName_txtbox.Name = "UserName_txtbox";
@@ -75,6 +77,7 @@
             // 
             // Password_txtbox
             // 
+            Password_txtbox.BackColor = Color.LightGray;
             Password_txtbox.Font = new Font("Microsoft Sans Serif", 12F);
             Password_txtbox.Location = new Point(341, 435);
             Password_txtbox.Name = "Password_txtbox";
@@ -83,6 +86,7 @@
             // 
             // ConfirmPassword_txtbox
             // 
+            ConfirmPassword_txtbox.BackColor = Color.LightGray;
             ConfirmPassword_txtbox.Font = new Font("Microsoft Sans Serif", 12F);
             ConfirmPassword_txtbox.Location = new Point(341, 499);
             ConfirmPassword_txtbox.Name = "ConfirmPassword_txtbox";
@@ -132,21 +136,23 @@
             // 
             // UserList_grid
             // 
-            UserList_grid.AllowUserToAddRows = false;
             UserList_grid.AllowUserToDeleteRows = false;
             UserList_grid.BackgroundColor = SystemColors.ControlLight;
+            UserList_grid.BorderStyle = BorderStyle.Fixed3D;
+            UserList_grid.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             UserList_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             UserList_grid.Columns.AddRange(new DataGridViewColumn[] { Username_List });
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 14F);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            UserList_grid.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 14F);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            UserList_grid.DefaultCellStyle = dataGridViewCellStyle4;
             UserList_grid.Location = new Point(801, 227);
             UserList_grid.Name = "UserList_grid";
+            UserList_grid.ReadOnly = true;
             UserList_grid.Size = new Size(307, 357);
             UserList_grid.TabIndex = 3;
             UserList_grid.CellClick += UserList_grid_CellClick;
@@ -154,10 +160,11 @@
             // Username_List
             // 
             Username_List.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Username_List.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Username_List.DefaultCellStyle = dataGridViewCellStyle3;
             Username_List.HeaderText = "Username_List";
             Username_List.Name = "Username_List";
+            Username_List.ReadOnly = true;
             // 
             // AddUser_picbox
             // 

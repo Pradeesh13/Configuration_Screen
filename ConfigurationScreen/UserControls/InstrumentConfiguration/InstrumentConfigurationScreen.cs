@@ -247,7 +247,7 @@ namespace ConfigurationScreen.UserControls.InstrumentConfiguration
             };
             devices.Add(device);
 
-            DeviceList_grid.Rows.Add(device.DeviceName);                                       // Update UI list with new device name
+            DeviceList_grid.Rows.Add(device.DeviceName);                                                    // Update UI list with new device name
 
             ClearControlInputs();
 

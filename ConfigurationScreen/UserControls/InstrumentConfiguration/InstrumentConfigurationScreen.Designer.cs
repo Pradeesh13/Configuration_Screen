@@ -641,6 +641,7 @@
             DeviceList_grid.Location = new Point(54, 34);
             DeviceList_grid.Name = "DeviceList_grid";
             DeviceList_grid.ReadOnly = true;
+            DeviceList_grid.RowHeadersVisible = false;
             DeviceList_grid.Size = new Size(423, 608);
             DeviceList_grid.TabIndex = 1;
             DeviceList_grid.CellClick += DeviceList_grid_CellClick;
