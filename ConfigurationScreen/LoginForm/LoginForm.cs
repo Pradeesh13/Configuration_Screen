@@ -1,34 +1,37 @@
-﻿using ConfigurationScreen.UserControls.LoginControl;
-
-namespace ConfigurationScreen.LoginForm
+﻿namespace ConfigurationScreen.LoginForm
 {
     public partial class LoginForm : Form
     {
         public LoginForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.AcceptButton = Login_btn;
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
+        private void Login_btn_Click(object sender, EventArgs e)
         {
-            Login_panel.Controls.Clear();
-
-            MainLoginScreen MainScreen_Panel = new MainLoginScreen();
-
-            Login_panel.Controls.Add(MainScreen_Panel);
-
-            Login_panel.Visible = true;
+            if (UserName_txtbox.Text.ToUpper() == "ADMIN" && Password_txtbox.Text == "123")
+            {
+                Configuration_Screen ConfigurationScreen = new Configuration_Screen();
+                ConfigurationScreen.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Exit_btn_Click(object sender, EventArgs e)
         {
-            Login_panel.Controls.Clear();
+            this.Close();
+        }
 
-            PasswordResetScreen PasswordResetScreen_Panel = new PasswordResetScreen();
-
-            Login_panel.Controls.Add(PasswordResetScreen_Panel);
-
-            Login_panel.Visible = true;
+        private void Cancel_btn_Click(object sender, EventArgs e)
+        {
+            UserName_txtbox.Text = null;
+            Password_txtbox.Text = null;
         }
     }
 }

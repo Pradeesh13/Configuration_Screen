@@ -19,12 +19,6 @@
     <Compile Update="UserControls\IOChannelMapping\IOMappingScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControls\LoginControl\MainLoginScreen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="UserControls\LoginControl\PasswordResetScreen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="UserControls\UserConfiguration\UserConfigurationScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -1,4 +1,5 @@
 using ConfigurationScreen;
+using ConfigurationScreen.LoginForm;
 
 namespace MainScreen
 {
@@ -13,7 +14,7 @@ namespace MainScreen
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Configuration_Screen());
+            Application.Run(new LoginForm());
         }
     }
 }
