@@ -14,8 +14,9 @@
             if (UserName_txtbox.Text.ToUpper() == "ADMIN" && Password_txtbox.Text == "123")
             {
                 Configuration_Screen ConfigurationScreen = new Configuration_Screen();
+                ConfigurationScreen.FormClosed += (s, args) => Application.Exit();
                 ConfigurationScreen.Show();
-                this.Hide();
+                this.Close();
             }
             else
             {

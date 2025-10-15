@@ -10,6 +10,9 @@
     <Compile Update="UserControls\InstrumentConfiguration\InstrumentConfigurationScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UserControls\IOChannelMapping\DaqScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControls\IOChannelMapping\IOChannelMappingScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -36,7 +36,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button1.Location = new Point(84, 55);
+            button1.Location = new Point(1, 1);
             button1.Name = "button1";
             button1.Size = new Size(729, 32);
             button1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button2.Location = new Point(811, 55);
+            button2.Location = new Point(728, 1);
             button2.Name = "button2";
             button2.Size = new Size(706, 32);
             button2.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             // panel1
             // 
-            panel1.Location = new Point(86, 85);
+            panel1.Location = new Point(2, 33);
             panel1.Name = "panel1";
             panel1.Size = new Size(1430, 790);
             panel1.TabIndex = 1;
@@ -68,7 +68,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "IOChannelMappingScreen";
-            Size = new Size(1593, 881);
+            Size = new Size(1436, 827);
             ResumeLayout(false);
         }
 

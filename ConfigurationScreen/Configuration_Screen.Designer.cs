@@ -63,7 +63,7 @@
             InstrumentConfig_btn.BackColor = Color.Azure;
             InstrumentConfig_btn.FlatStyle = FlatStyle.Popup;
             InstrumentConfig_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            InstrumentConfig_btn.Location = new Point(35, 214);
+            InstrumentConfig_btn.Location = new Point(35, 243);
             InstrumentConfig_btn.Name = "InstrumentConfig_btn";
             InstrumentConfig_btn.Size = new Size(171, 52);
             InstrumentConfig_btn.TabIndex = 1;
@@ -85,7 +85,7 @@
             button1.BackColor = Color.Azure;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button1.Location = new Point(35, 269);
+            button1.Location = new Point(35, 298);
             button1.Name = "button1";
             button1.Size = new Size(171, 52);
             button1.TabIndex = 1;
@@ -98,7 +98,7 @@
             button2.BackColor = Color.Azure;
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button2.Location = new Point(35, 324);
+            button2.Location = new Point(35, 353);
             button2.Name = "button2";
             button2.Size = new Size(171, 52);
             button2.TabIndex = 1;
@@ -111,7 +111,7 @@
             button3.BackColor = Color.Azure;
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button3.Location = new Point(35, 379);
+            button3.Location = new Point(35, 408);
             button3.Name = "button3";
             button3.Size = new Size(171, 52);
             button3.TabIndex = 1;
@@ -124,7 +124,7 @@
             UserConfig_btn.BackColor = Color.Azure;
             UserConfig_btn.FlatStyle = FlatStyle.Popup;
             UserConfig_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            UserConfig_btn.Location = new Point(35, 434);
+            UserConfig_btn.Location = new Point(35, 463);
             UserConfig_btn.Name = "UserConfig_btn";
             UserConfig_btn.Size = new Size(171, 52);
             UserConfig_btn.TabIndex = 1;
@@ -138,7 +138,7 @@
             button5.BackColor = Color.Azure;
             button5.FlatStyle = FlatStyle.Popup;
             button5.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button5.Location = new Point(35, 521);
+            button5.Location = new Point(35, 539);
             button5.Name = "button5";
             button5.Size = new Size(171, 52);
             button5.TabIndex = 1;
@@ -151,7 +151,7 @@
             button6.BackColor = Color.Azure;
             button6.FlatStyle = FlatStyle.Popup;
             button6.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button6.Location = new Point(35, 576);
+            button6.Location = new Point(35, 594);
             button6.Name = "button6";
             button6.Size = new Size(171, 52);
             button6.TabIndex = 1;
@@ -164,7 +164,7 @@
             button7.BackColor = Color.Azure;
             button7.FlatStyle = FlatStyle.Popup;
             button7.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button7.Location = new Point(35, 631);
+            button7.Location = new Point(35, 649);
             button7.Name = "button7";
             button7.Size = new Size(171, 52);
             button7.TabIndex = 1;
@@ -177,7 +177,7 @@
             button8.BackColor = Color.Azure;
             button8.FlatStyle = FlatStyle.Popup;
             button8.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button8.Location = new Point(35, 686);
+            button8.Location = new Point(35, 704);
             button8.Name = "button8";
             button8.Size = new Size(171, 52);
             button8.TabIndex = 1;
@@ -190,7 +190,7 @@
             button9.BackColor = Color.Azure;
             button9.FlatStyle = FlatStyle.Popup;
             button9.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button9.Location = new Point(35, 741);
+            button9.Location = new Point(35, 759);
             button9.Name = "button9";
             button9.Size = new Size(171, 52);
             button9.TabIndex = 1;
@@ -203,7 +203,7 @@
             button10.BackColor = Color.Azure;
             button10.FlatStyle = FlatStyle.Popup;
             button10.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button10.Location = new Point(35, 796);
+            button10.Location = new Point(35, 814);
             button10.Name = "button10";
             button10.Size = new Size(171, 52);
             button10.TabIndex = 1;
@@ -216,7 +216,7 @@
             button11.BackColor = Color.Azure;
             button11.FlatStyle = FlatStyle.Popup;
             button11.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button11.Location = new Point(35, 851);
+            button11.Location = new Point(35, 869);
             button11.Name = "button11";
             button11.Size = new Size(171, 52);
             button11.TabIndex = 1;
@@ -229,7 +229,7 @@
             button12.BackColor = Color.Azure;
             button12.FlatStyle = FlatStyle.Popup;
             button12.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button12.Location = new Point(35, 906);
+            button12.Location = new Point(35, 924);
             button12.Name = "button12";
             button12.Size = new Size(171, 52);
             button12.TabIndex = 1;
@@ -239,7 +239,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 11F);
-            textBox1.Location = new Point(35, 34);
+            textBox1.Location = new Point(35, 63);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(171, 27);
             textBox1.TabIndex = 2;
@@ -247,7 +247,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 11F);
-            textBox2.Location = new Point(35, 149);
+            textBox2.Location = new Point(35, 178);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(171, 27);
             textBox2.TabIndex = 2;
@@ -255,7 +255,7 @@
             // textBox3
             // 
             textBox3.Font = new Font("Segoe UI", 11F);
-            textBox3.Location = new Point(35, 91);
+            textBox3.Location = new Point(35, 120);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(171, 27);
             textBox3.TabIndex = 2;
@@ -264,7 +264,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(39, 9);
+            label1.Location = new Point(39, 38);
             label1.Name = "label1";
             label1.Size = new Size(167, 21);
             label1.TabIndex = 3;
@@ -274,7 +274,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(70, 67);
+            label2.Location = new Point(70, 96);
             label2.Name = "label2";
             label2.Size = new Size(94, 21);
             label2.TabIndex = 3;
@@ -284,7 +284,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(70, 124);
+            label3.Location = new Point(70, 153);
             label3.Name = "label3";
             label3.Size = new Size(93, 21);
             label3.TabIndex = 3;

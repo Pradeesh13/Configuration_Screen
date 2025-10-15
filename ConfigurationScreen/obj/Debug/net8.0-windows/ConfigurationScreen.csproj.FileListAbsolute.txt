@@ -68,3 +68,4 @@ C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\o
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.pdb
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.genruntimeconfig.cache
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ref\ConfigurationScreen.dll
+C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.DaqScreen.resources
