@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ConfigurationScreen.UserControls.IOChannelMapping
 {
-    public partial class ChannelMappinScreen : UserControl
+    public partial class PLCScreen : UserControl
     {
-        public ChannelMappinScreen()
+        public PLCScreen()
         {
             InitializeComponent();
         }

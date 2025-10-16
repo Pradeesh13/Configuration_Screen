@@ -32,8 +32,8 @@
             Exit_btn = new Button();
             Cancel_btn = new Button();
             Login_btn = new Button();
+            User_txtbox = new TextBox();
             Password_txtbox = new TextBox();
-            UserName_txtbox = new TextBox();
             label2 = new Label();
             label3 = new Label();
             SuspendLayout();
@@ -88,26 +88,26 @@
             Login_btn.UseVisualStyleBackColor = false;
             Login_btn.Click += Login_btn_Click;
             // 
+            // User_txtbox
+            // 
+            User_txtbox.BackColor = Color.White;
+            User_txtbox.BorderStyle = BorderStyle.FixedSingle;
+            User_txtbox.Font = new Font("Segoe UI", 14F);
+            User_txtbox.ForeColor = Color.Firebrick;
+            User_txtbox.Location = new Point(145, 50);
+            User_txtbox.Name = "User_txtbox";
+            User_txtbox.Size = new Size(217, 32);
+            User_txtbox.TabIndex = 5;
+            // 
             // Password_txtbox
             // 
-            Password_txtbox.BackColor = Color.White;
             Password_txtbox.BorderStyle = BorderStyle.FixedSingle;
             Password_txtbox.Font = new Font("Segoe UI", 14F);
             Password_txtbox.ForeColor = Color.Firebrick;
-            Password_txtbox.Location = new Point(142, 100);
+            Password_txtbox.Location = new Point(146, 102);
             Password_txtbox.Name = "Password_txtbox";
             Password_txtbox.Size = new Size(217, 32);
-            Password_txtbox.TabIndex = 5;
-            // 
-            // UserName_txtbox
-            // 
-            UserName_txtbox.BorderStyle = BorderStyle.FixedSingle;
-            UserName_txtbox.Font = new Font("Segoe UI", 14F);
-            UserName_txtbox.ForeColor = Color.Firebrick;
-            UserName_txtbox.Location = new Point(142, 48);
-            UserName_txtbox.Name = "UserName_txtbox";
-            UserName_txtbox.Size = new Size(217, 32);
-            UserName_txtbox.TabIndex = 6;
+            Password_txtbox.TabIndex = 6;
             // 
             // label2
             // 
@@ -141,8 +141,8 @@
             Controls.Add(Exit_btn);
             Controls.Add(Cancel_btn);
             Controls.Add(Login_btn);
+            Controls.Add(User_txtbox);
             Controls.Add(Password_txtbox);
-            Controls.Add(UserName_txtbox);
             Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(label1);
@@ -158,8 +158,8 @@
         private Button Exit_btn;
         private Button Cancel_btn;
         private Button Login_btn;
+        private TextBox User_txtbox;
         private TextBox Password_txtbox;
-        private TextBox UserName_txtbox;
         private Label label2;
         private Label label3;
     }

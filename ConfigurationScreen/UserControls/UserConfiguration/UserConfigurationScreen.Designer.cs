@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserConfigurationScreen));
             UserLevel_cmbbox = new ComboBox();
             UserName_txtbox = new TextBox();
@@ -61,7 +61,7 @@
             UserLevel_cmbbox.Font = new Font("Microsoft Sans Serif", 12F);
             UserLevel_cmbbox.FormattingEnabled = true;
             UserLevel_cmbbox.Items.AddRange(new object[] { "Administator", "Operator" });
-            UserLevel_cmbbox.Location = new Point(341, 303);
+            UserLevel_cmbbox.Location = new Point(361, 320);
             UserLevel_cmbbox.Name = "UserLevel_cmbbox";
             UserLevel_cmbbox.Size = new Size(200, 28);
             UserLevel_cmbbox.TabIndex = 0;
@@ -70,7 +70,7 @@
             // 
             UserName_txtbox.BackColor = Color.LightGray;
             UserName_txtbox.Font = new Font("Microsoft Sans Serif", 12F);
-            UserName_txtbox.Location = new Point(341, 370);
+            UserName_txtbox.Location = new Point(361, 387);
             UserName_txtbox.Name = "UserName_txtbox";
             UserName_txtbox.Size = new Size(200, 26);
             UserName_txtbox.TabIndex = 1;
@@ -79,7 +79,7 @@
             // 
             Password_txtbox.BackColor = Color.LightGray;
             Password_txtbox.Font = new Font("Microsoft Sans Serif", 12F);
-            Password_txtbox.Location = new Point(341, 435);
+            Password_txtbox.Location = new Point(361, 452);
             Password_txtbox.Name = "Password_txtbox";
             Password_txtbox.Size = new Size(200, 26);
             Password_txtbox.TabIndex = 1;
@@ -88,7 +88,7 @@
             // 
             ConfirmPassword_txtbox.BackColor = Color.LightGray;
             ConfirmPassword_txtbox.Font = new Font("Microsoft Sans Serif", 12F);
-            ConfirmPassword_txtbox.Location = new Point(341, 499);
+            ConfirmPassword_txtbox.Location = new Point(361, 516);
             ConfirmPassword_txtbox.Name = "ConfirmPassword_txtbox";
             ConfirmPassword_txtbox.Size = new Size(200, 26);
             ConfirmPassword_txtbox.TabIndex = 1;
@@ -97,7 +97,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label1.Location = new Point(341, 275);
+            label1.Location = new Point(361, 292);
             label1.Name = "label1";
             label1.Size = new Size(94, 20);
             label1.TabIndex = 2;
@@ -107,7 +107,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label2.Location = new Point(341, 341);
+            label2.Location = new Point(361, 358);
             label2.Name = "label2";
             label2.Size = new Size(98, 20);
             label2.TabIndex = 2;
@@ -117,7 +117,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label3.Location = new Point(341, 405);
+            label3.Location = new Point(361, 422);
             label3.Name = "label3";
             label3.Size = new Size(81, 24);
             label3.TabIndex = 2;
@@ -128,7 +128,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label4.Location = new Point(341, 475);
+            label4.Location = new Point(361, 492);
             label4.Name = "label4";
             label4.Size = new Size(153, 20);
             label4.TabIndex = 2;
@@ -142,26 +142,26 @@
             UserList_grid.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             UserList_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             UserList_grid.Columns.AddRange(new DataGridViewColumn[] { Username_List });
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Window;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 14F);
-            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
-            UserList_grid.DefaultCellStyle = dataGridViewCellStyle4;
-            UserList_grid.Location = new Point(801, 227);
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 14F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            UserList_grid.DefaultCellStyle = dataGridViewCellStyle2;
+            UserList_grid.Location = new Point(801, 219);
             UserList_grid.Name = "UserList_grid";
             UserList_grid.ReadOnly = true;
-            UserList_grid.Size = new Size(307, 357);
+            UserList_grid.Size = new Size(387, 411);
             UserList_grid.TabIndex = 3;
             UserList_grid.CellClick += UserList_grid_CellClick;
             // 
             // Username_List
             // 
             Username_List.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Username_List.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Username_List.DefaultCellStyle = dataGridViewCellStyle1;
             Username_List.HeaderText = "Username_List";
             Username_List.Name = "Username_List";
             Username_List.ReadOnly = true;
@@ -169,7 +169,7 @@
             // AddUser_picbox
             // 
             AddUser_picbox.Image = (Image)resources.GetObject("AddUser_picbox.Image");
-            AddUser_picbox.Location = new Point(642, 320);
+            AddUser_picbox.Location = new Point(662, 337);
             AddUser_picbox.Name = "AddUser_picbox";
             AddUser_picbox.Size = new Size(50, 40);
             AddUser_picbox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -180,7 +180,7 @@
             // RemoveUser_picbox
             // 
             RemoveUser_picbox.Image = (Image)resources.GetObject("RemoveUser_picbox.Image");
-            RemoveUser_picbox.Location = new Point(646, 457);
+            RemoveUser_picbox.Location = new Point(666, 474);
             RemoveUser_picbox.Name = "RemoveUser_picbox";
             RemoveUser_picbox.Size = new Size(42, 41);
             RemoveUser_picbox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -191,7 +191,7 @@
             // UpdateUser_picbox
             // 
             UpdateUser_picbox.Image = (Image)resources.GetObject("UpdateUser_picbox.Image");
-            UpdateUser_picbox.Location = new Point(641, 382);
+            UpdateUser_picbox.Location = new Point(661, 399);
             UpdateUser_picbox.Name = "UpdateUser_picbox";
             UpdateUser_picbox.Size = new Size(51, 48);
             UpdateUser_picbox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -202,7 +202,7 @@
             // NewFile_picbox
             // 
             NewFile_picbox.Image = (Image)resources.GetObject("NewFile_picbox.Image");
-            NewFile_picbox.Location = new Point(641, 249);
+            NewFile_picbox.Location = new Point(661, 266);
             NewFile_picbox.Name = "NewFile_picbox";
             NewFile_picbox.Size = new Size(51, 44);
             NewFile_picbox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -213,7 +213,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(646, 520);
+            pictureBox5.Location = new Point(666, 537);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(41, 43);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -240,7 +240,7 @@
             Controls.Add(UserName_txtbox);
             Controls.Add(UserLevel_cmbbox);
             Name = "UserConfigurationScreen";
-            Size = new Size(1467, 780);
+            Size = new Size(1623, 880);
             ((System.ComponentModel.ISupportInitialize)UserList_grid).EndInit();
             ((System.ComponentModel.ISupportInitialize)AddUser_picbox).EndInit();
             ((System.ComponentModel.ISupportInitialize)RemoveUser_picbox).EndInit();

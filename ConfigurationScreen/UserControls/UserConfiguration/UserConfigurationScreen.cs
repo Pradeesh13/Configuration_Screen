@@ -1,4 +1,5 @@
 ﻿using ConfigurationScreen.Utility;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace ConfigurationScreen.UserControls.UserConfiguration
     public partial class UserConfigurationScreen : UserControl
     {
         private List<UserConfigurationParameters> Users = new List<UserConfigurationParameters>();
+        Ini IniFile = new Ini("E:\\Projects\\C#\\Configuration_Screen\\Info\\UserConfig.ini");
 
         public UserConfigurationScreen()
         {
@@ -96,6 +98,8 @@ namespace ConfigurationScreen.UserControls.UserConfiguration
 
             UserList_grid.Rows.Add(NewUser.UserName);
 
+            Writeini();
+
             ClearControlInputs();
 
             DisableControls();
@@ -163,6 +167,8 @@ namespace ConfigurationScreen.UserControls.UserConfiguration
                     Users.RemoveAt(rowIndex);
                     UserList_grid.Rows.RemoveAt(rowIndex);
 
+                    DeleteUser();
+
                     ClearControlInputs();
                 }
             }
@@ -174,6 +180,22 @@ namespace ConfigurationScreen.UserControls.UserConfiguration
             {
                 MessageBox.Show("Please select a user to remove.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void Writeini()
+        {
+            string user_txt = UserLevel_cmbbox.SelectedItem?.ToString();
+            string UserName_txt = UserName_txtbox.Text;
+            string Password_txt = Password_txtbox.Text;
+
+            IniFile.WriteValue(UserName_txt, user_txt, Password_txt);
+
+            IniFile.Save();
+        }
+
+        private void DeleteUser()
+        {
+            IniFile.DeleteKey(UserName_txtbox.Text, UserLevel_cmbbox.SelectedItem?.ToString(), Password_txtbox.Text);
         }
     }
 }

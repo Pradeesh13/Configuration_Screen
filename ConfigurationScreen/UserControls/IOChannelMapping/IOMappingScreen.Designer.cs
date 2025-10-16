@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(653, 344);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(240, 150);
+            dataGridView1.TabIndex = 0;
             // 
             // IOMappingScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Gainsboro;
+            BackColor = Color.WhiteSmoke;
+            Controls.Add(dataGridView1);
             Name = "IOMappingScreen";
-            Size = new Size(1430, 790);
+            Size = new Size(1536, 874);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dataGridView1;
     }
 }

@@ -1,42 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\",
+  "WorkspaceRootPath": "E:\\Projects\\C#\\Configuration_Screen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|c:\\users\\prade\\desktop\\projects\\c#_projects\\project_screen\\configurationscreen\\usercontrols\\iochannelmapping\\daqscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\iochannelmapping\\daqscreen.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\usercontrols\\userconfiguration\\userconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\userconfiguration\\userconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|c:\\users\\prade\\desktop\\projects\\c#_projects\\project_screen\\configurationscreen\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\utility\\ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\utility\\ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\usercontrols\\userconfiguration\\userconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\userconfiguration\\userconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\configurationscreen\\configuration_screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\configuration_screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF4DE0B5-9F19-48A0-A579-2255482B4579}|MainScreen\\MainScreen.csproj|c:\\users\\prade\\desktop\\projects\\c#_projects\\project_screen\\mainscreen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF4DE0B5-9F19-48A0-A579-2255482B4579}|MainScreen\\MainScreen.csproj|solutionrelative:mainscreen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|c:\\users\\prade\\desktop\\projects\\c#_projects\\project_screen\\configurationscreen\\usercontrols\\iochannelmapping\\channelmappinscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\iochannelmapping\\channelmappinscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|c:\\users\\prade\\desktop\\projects\\c#_projects\\project_screen\\configurationscreen\\usercontrols\\iochannelmapping\\daqscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\iochannelmapping\\daqscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|c:\\users\\prade\\desktop\\projects\\c#_projects\\project_screen\\configurationscreen\\usercontrols\\iochannelmapping\\daqscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\iochannelmapping\\daqscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|c:\\users\\prade\\desktop\\projects\\c#_projects\\project_screen\\configurationscreen\\configuration_screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\configuration_screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\configurationscreen\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,119 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ini.cs",
+              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\Utility\\Ini.cs",
+              "RelativeDocumentMoniker": "ConfigurationScreen\\Utility\\Ini.cs",
+              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\Utility\\Ini.cs",
+              "RelativeToolTip": "ConfigurationScreen\\Utility\\Ini.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAApwH8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T10:58:48.012Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DaqScreen.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.Designer.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.Designer.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.Designer.cs",
-              "RelativeToolTip": "ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.Designer.cs",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAtwBUBAABNAAAAAAAAAA==",
+              "Title": "UserConfigurationScreen.cs",
+              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
+              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
+              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
+              "RelativeToolTip": "ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAApwKsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T18:54:38.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DaqScreen.cs",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.cs",
-              "RelativeToolTip": "ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T18:52:12.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DaqScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.cs [Design]",
-              "RelativeToolTip": "ConfigurationScreen\\UserControls\\IOChannelMapping\\DaqScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T18:15:36.499Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChannelMappinScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\UserControls\\IOChannelMapping\\ChannelMappinScreen.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\IOChannelMapping\\ChannelMappinScreen.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\UserControls\\IOChannelMapping\\ChannelMappinScreen.cs [Design]",
-              "RelativeToolTip": "ConfigurationScreen\\UserControls\\IOChannelMapping\\ChannelMappinScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T18:01:03.739Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\MainScreen\\Program.cs",
-              "RelativeDocumentMoniker": "MainScreen\\Program.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\MainScreen\\Program.cs",
-              "RelativeToolTip": "MainScreen\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:40:39.529Z",
+              "WhenOpened": "2025-10-16T09:58:38.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Configuration_Screen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\Configuration_Screen.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\Configuration_Screen.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\Configuration_Screen.cs [Design]",
-              "RelativeToolTip": "ConfigurationScreen\\Configuration_Screen.cs [Design]",
+              "Title": "UserConfigurationScreen.cs [Design]",
+              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
+              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
+              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs [Design]",
+              "RelativeToolTip": "ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:40:06.2Z",
+              "WhenOpened": "2025-10-16T09:58:36.223Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\LoginForm\\LoginForm.cs",
+              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\LoginForm\\LoginForm.cs",
               "RelativeDocumentMoniker": "ConfigurationScreen\\LoginForm\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\LoginForm\\LoginForm.cs",
+              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\LoginForm\\LoginForm.cs",
               "RelativeToolTip": "ConfigurationScreen\\LoginForm\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAB1AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T12:02:03.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\LoginForm\\LoginForm.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\LoginForm\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\LoginForm\\LoginForm.cs [Design]",
-              "RelativeToolTip": "ConfigurationScreen\\LoginForm\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:21:17.44Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Configuration_Screen.cs",
-              "DocumentMoniker": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\Configuration_Screen.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\Configuration_Screen.cs",
-              "ToolTip": "C:\\Users\\prade\\Desktop\\Projects\\C#_Projects\\Project_Screen\\ConfigurationScreen\\Configuration_Screen.cs",
-              "RelativeToolTip": "ConfigurationScreen\\Configuration_Screen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T11:47:38.864Z",
               "EditorCaption": ""
             }
           ]

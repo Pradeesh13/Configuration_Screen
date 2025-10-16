@@ -1,4 +1,5 @@
 using ConfigurationScreen.UserControls.InstrumentConfiguration;
+using ConfigurationScreen.UserControls.IOChannelMapping;
 using ConfigurationScreen.UserControls.UserConfiguration;
 
 namespace ConfigurationScreen
@@ -8,6 +9,7 @@ namespace ConfigurationScreen
         public Configuration_Screen()
         {
             InitializeComponent();
+            init();
         }
 
         #region Form Events
@@ -46,6 +48,22 @@ namespace ConfigurationScreen
 
             Config_panel.Visible = true;
         }
+
+        private void IOChannelMapping_btn_Click(object sender, EventArgs e)
+        {
+            Config_panel.Controls.Clear();
+
+            IOChannelMappingScreen IOChannelMapping = new IOChannelMappingScreen();
+
+            Config_panel.Controls.Add(IOChannelMapping);
+
+            Config_panel.Visible = true;
+        }
         #endregion
+
+        public void init()
+        {
+            UserName_txtbox.Text = ConfigurationScreen.LoginForm.LoginForm.username?.ToUpper();
+        }
     }
 }

@@ -2,21 +2,25 @@
 {
     public partial class LoginForm : Form
     {
+        public static string? username;
+
         public LoginForm()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            Password_txtbox.Focus();
             this.AcceptButton = Login_btn;
         }
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
-            if (UserName_txtbox.Text.ToUpper() == "ADMIN" && Password_txtbox.Text == "123")
+            if (User_txtbox.Text.ToUpper() == "ADMIN" && Password_txtbox.Text == "123")
             {
+                username = User_txtbox.Text;
                 Configuration_Screen ConfigurationScreen = new Configuration_Screen();
                 ConfigurationScreen.FormClosed += (s, args) => Application.Exit();
                 ConfigurationScreen.Show();
-                this.Close();
+                this.Hide();
             }
             else
             {
@@ -31,8 +35,8 @@
 
         private void Cancel_btn_Click(object sender, EventArgs e)
         {
-            UserName_txtbox.Text = null;
             Password_txtbox.Text = null;
+            User_txtbox.Text = null;
         }
     }
 }

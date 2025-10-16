@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configuration_Screen));
             InstrumentConfig_btn = new Button();
             Config_panel = new Panel();
-            button1 = new Button();
+            IOChannelMapping_btn = new Button();
             button2 = new Button();
             button3 = new Button();
             UserConfig_btn = new Button();
@@ -45,7 +45,7 @@
             button12 = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            UserName_txtbox = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -74,23 +74,24 @@
             // Config_panel
             // 
             Config_panel.BorderStyle = BorderStyle.FixedSingle;
-            Config_panel.Location = new Point(281, 118);
+            Config_panel.Location = new Point(249, 96);
             Config_panel.Name = "Config_panel";
-            Config_panel.Size = new Size(1467, 780);
+            Config_panel.Size = new Size(1623, 880);
             Config_panel.TabIndex = 0;
             // 
-            // button1
+            // IOChannelMapping_btn
             // 
-            button1.AutoSize = true;
-            button1.BackColor = Color.Azure;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button1.Location = new Point(35, 298);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 52);
-            button1.TabIndex = 1;
-            button1.Text = "IO CHANNEL\r\nMapping\r\n";
-            button1.UseVisualStyleBackColor = false;
+            IOChannelMapping_btn.AutoSize = true;
+            IOChannelMapping_btn.BackColor = Color.Azure;
+            IOChannelMapping_btn.FlatStyle = FlatStyle.Popup;
+            IOChannelMapping_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            IOChannelMapping_btn.Location = new Point(35, 298);
+            IOChannelMapping_btn.Name = "IOChannelMapping_btn";
+            IOChannelMapping_btn.Size = new Size(171, 52);
+            IOChannelMapping_btn.TabIndex = 1;
+            IOChannelMapping_btn.Text = "IO CHANNEL\r\nMapping\r\n";
+            IOChannelMapping_btn.UseVisualStyleBackColor = false;
+            IOChannelMapping_btn.Click += IOChannelMapping_btn_Click;
             // 
             // button2
             // 
@@ -252,13 +253,15 @@
             textBox2.Size = new Size(171, 27);
             textBox2.TabIndex = 2;
             // 
-            // textBox3
+            // UserName_txtbox
             // 
-            textBox3.Font = new Font("Segoe UI", 11F);
-            textBox3.Location = new Point(35, 120);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(171, 27);
-            textBox3.TabIndex = 2;
+            UserName_txtbox.Font = new Font("Segoe UI", 11F);
+            UserName_txtbox.Location = new Point(35, 120);
+            UserName_txtbox.Name = "UserName_txtbox";
+            UserName_txtbox.ReadOnly = true;
+            UserName_txtbox.Size = new Size(171, 27);
+            UserName_txtbox.TabIndex = 2;
+            UserName_txtbox.TextAlign = HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -296,16 +299,16 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
-            panel1.Location = new Point(281, 50);
+            panel1.Location = new Point(249, 29);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1467, 68);
+            panel1.Size = new Size(1623, 68);
             panel1.TabIndex = 4;
             // 
             // pictureBox1
             // 
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1247, 0);
+            pictureBox1.Location = new Point(1403, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(220, 69);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -317,7 +320,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             label5.ForeColor = SystemColors.ButtonFace;
-            label5.Location = new Point(614, 5);
+            label5.Location = new Point(652, 5);
             label5.Name = "label5";
             label5.Size = new Size(242, 25);
             label5.TabIndex = 3;
@@ -328,7 +331,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(665, 37);
+            label4.Location = new Point(703, 37);
             label4.Name = "label4";
             label4.Size = new Size(125, 25);
             label4.TabIndex = 3;
@@ -339,12 +342,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1789, 1002);
+            ClientSize = new Size(1905, 1016);
             Controls.Add(panel1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox3);
+            Controls.Add(UserName_txtbox);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(button12);
@@ -357,7 +360,7 @@
             Controls.Add(button7);
             Controls.Add(button2);
             Controls.Add(button6);
-            Controls.Add(button1);
+            Controls.Add(IOChannelMapping_btn);
             Controls.Add(button5);
             Controls.Add(InstrumentConfig_btn);
             Controls.Add(Config_panel);
@@ -375,7 +378,7 @@
         #endregion
         private Button InstrumentConfig_btn;
         private Panel Config_panel;
-        private Button button1;
+        private Button IOChannelMapping_btn;
         private Button button2;
         private Button button3;
         private Button UserConfig_btn;
@@ -389,7 +392,7 @@
         private Button button12;
         private TextBox textBox1;
         private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox UserName_txtbox;
         private Label label1;
         private Label label2;
         private Label label3;

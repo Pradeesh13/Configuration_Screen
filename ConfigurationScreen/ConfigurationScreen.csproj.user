@@ -16,10 +16,13 @@
     <Compile Update="UserControls\IOChannelMapping\IOChannelMappingScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UserControls\IOChannelMapping\ChannelMappinScreen.cs">
+    <Compile Update="UserControls\IOChannelMapping\ChannelMappingScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControls\IOChannelMapping\IOMappingScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\IOChannelMapping\PLCScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControls\UserConfiguration\UserConfigurationScreen.cs">

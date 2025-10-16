@@ -151,7 +151,7 @@
             DeviceControls_panel.Controls.Add(InterfaceType_cmbbox);
             DeviceControls_panel.Controls.Add(DeviceType_cmbbox);
             DeviceControls_panel.Controls.Add(DeviceMake_cmbbox);
-            DeviceControls_panel.Location = new Point(629, 34);
+            DeviceControls_panel.Location = new Point(702, 91);
             DeviceControls_panel.Name = "DeviceControls_panel";
             DeviceControls_panel.Size = new Size(784, 608);
             DeviceControls_panel.TabIndex = 0;
@@ -638,7 +638,7 @@
             DeviceList_grid.BorderStyle = BorderStyle.Fixed3D;
             DeviceList_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DeviceList_grid.Columns.AddRange(new DataGridViewColumn[] { DeviceAdded });
-            DeviceList_grid.Location = new Point(54, 34);
+            DeviceList_grid.Location = new Point(127, 91);
             DeviceList_grid.Name = "DeviceList_grid";
             DeviceList_grid.ReadOnly = true;
             DeviceList_grid.RowHeadersVisible = false;
@@ -657,16 +657,16 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label25.Location = new Point(628, 655);
+            label25.Location = new Point(127, 763);
             label25.Name = "label25";
-            label25.Size = new Size(556, 105);
+            label25.Size = new Size(1077, 84);
             label25.TabIndex = 5;
             label25.Text = resources.GetString("label25.Text");
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(526, 239);
+            pictureBox1.Location = new Point(599, 296);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(54, 53);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -677,7 +677,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(530, 328);
+            pictureBox2.Location = new Point(603, 385);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(45, 44);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -688,7 +688,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(530, 402);
+            pictureBox3.Location = new Point(603, 459);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(45, 45);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -699,7 +699,7 @@
             // UpdateDevice_picbox
             // 
             UpdateDevice_picbox.Image = (Image)resources.GetObject("UpdateDevice_picbox.Image");
-            UpdateDevice_picbox.Location = new Point(527, 480);
+            UpdateDevice_picbox.Location = new Point(600, 537);
             UpdateDevice_picbox.Name = "UpdateDevice_picbox";
             UpdateDevice_picbox.Size = new Size(54, 56);
             UpdateDevice_picbox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -720,7 +720,7 @@
             Controls.Add(DeviceList_grid);
             Controls.Add(DeviceControls_panel);
             Name = "InstrumentConfigurationScreen";
-            Size = new Size(1467, 780);
+            Size = new Size(1623, 880);
             DeviceControls_panel.ResumeLayout(false);
             DeviceControls_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)PollTimeout_numbox).EndInit();

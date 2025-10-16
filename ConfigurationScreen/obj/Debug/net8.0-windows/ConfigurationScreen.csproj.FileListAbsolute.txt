@@ -29,7 +29,6 @@ E:\Projects\C#\Configuration_Screen\ConfigurationScreen\bin\Debug\net8.0-windows
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.Configuration_Screen.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.Properties.Resources.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.InstrumentConfiguration.InstrumentConfigurationScreen.resources
-E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.ChannelMappinScreen.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.IOChannelMappingScreen.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.IOMappingScreen.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.UserConfiguration.UserConfigurationScreen.resources
@@ -69,3 +68,7 @@ C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\o
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.genruntimeconfig.cache
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ref\ConfigurationScreen.dll
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.DaqScreen.resources
+E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.LoginForm.LoginForm.resources
+E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.ChannelMappingScreen.resources
+E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.DaqScreen.resources
+E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.PLCScreen.resources

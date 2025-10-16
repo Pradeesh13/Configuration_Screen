@@ -28,54 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            panel1 = new Panel();
+            ChannelMapping_btn = new Button();
+            IOMapping_btn = new Button();
+            IOChannel_panel = new Panel();
             SuspendLayout();
             // 
-            // button1
+            // ChannelMapping_btn
             // 
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button1.Location = new Point(1, 1);
-            button1.Name = "button1";
-            button1.Size = new Size(729, 32);
-            button1.TabIndex = 0;
-            button1.Text = "Channel Mapping";
-            button1.UseVisualStyleBackColor = true;
+            ChannelMapping_btn.BackColor = Color.Gainsboro;
+            ChannelMapping_btn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            ChannelMapping_btn.Location = new Point(0, 1);
+            ChannelMapping_btn.Name = "ChannelMapping_btn";
+            ChannelMapping_btn.Size = new Size(820, 32);
+            ChannelMapping_btn.TabIndex = 0;
+            ChannelMapping_btn.Text = "Channel Mapping";
+            ChannelMapping_btn.UseVisualStyleBackColor = false;
+            ChannelMapping_btn.Click += ChannelMapping_btn_Click;
             // 
-            // button2
+            // IOMapping_btn
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button2.Location = new Point(728, 1);
-            button2.Name = "button2";
-            button2.Size = new Size(706, 32);
-            button2.TabIndex = 0;
-            button2.Text = "IO Mapping";
-            button2.UseVisualStyleBackColor = true;
+            IOMapping_btn.BackColor = Color.Gainsboro;
+            IOMapping_btn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            IOMapping_btn.Location = new Point(819, 1);
+            IOMapping_btn.Name = "IOMapping_btn";
+            IOMapping_btn.Size = new Size(804, 32);
+            IOMapping_btn.TabIndex = 0;
+            IOMapping_btn.Text = "IO Mapping";
+            IOMapping_btn.UseVisualStyleBackColor = false;
+            IOMapping_btn.Click += IOMapping_btn_Click;
             // 
-            // panel1
+            // IOChannel_panel
             // 
-            panel1.Location = new Point(2, 33);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1430, 790);
-            panel1.TabIndex = 1;
+            IOChannel_panel.Location = new Point(2, 33);
+            IOChannel_panel.Name = "IOChannel_panel";
+            IOChannel_panel.Size = new Size(1621, 835);
+            IOChannel_panel.TabIndex = 1;
             // 
             // IOChannelMappingScreen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(IOChannel_panel);
+            Controls.Add(IOMapping_btn);
+            Controls.Add(ChannelMapping_btn);
             Name = "IOChannelMappingScreen";
-            Size = new Size(1436, 827);
+            Size = new Size(1623, 880);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Panel panel1;
+        private Button ChannelMapping_btn;
+        private Button IOMapping_btn;
+        private Panel IOChannel_panel;
     }
 }
