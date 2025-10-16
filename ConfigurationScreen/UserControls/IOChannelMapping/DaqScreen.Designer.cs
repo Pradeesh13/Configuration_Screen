@@ -265,7 +265,6 @@
             dataGridView7.RowHeadersVisible = false;
             dataGridView7.Size = new Size(412, 554);
             dataGridView7.TabIndex = 3;
-            dataGridView7.CellContentClick += this.dataGridView7_CellContentClick;
             // 
             // dataGridViewTextBoxColumn12
             // 
