@@ -12,9 +12,16 @@ namespace ConfigurationScreen.UserControls.ConfigurationFile
 {
     public partial class OpenFileConfigurationScreen : UserControl
     {
+        
+
         public OpenFileConfigurationScreen()
         {
             InitializeComponent();
+        }
+
+        private void Ok_btn_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -3,6 +3,7 @@ using ConfigurationScreen.UserControls.FunctionalSequence;
 using ConfigurationScreen.UserControls.InstrumentConfiguration;
 using ConfigurationScreen.UserControls.IOChannelMapping;
 using ConfigurationScreen.UserControls.UserConfiguration;
+using System.Windows.Forms;
 
 namespace ConfigurationScreen
 {
@@ -100,6 +101,8 @@ namespace ConfigurationScreen
 
             OpenConfiguration_btn.Enabled = true;
             NewConfiguration_btn.Enabled = true;
+            SwitchUser_btn.Enabled = true;
+            ExtractZip_btn.Enabled = true;
         }
 
         public void Disable_buttons()
@@ -110,26 +113,60 @@ namespace ConfigurationScreen
             }
         }
 
+        public void Enable_buttons()
+        {
+            foreach (var button in Allbuttons)
+            {
+                button.Enabled = true;
+            }
+        }
+
         private void NewConfiguration_btn_Click(object sender, EventArgs e)
         {
-            ConfigFile_panel.Controls.Clear();
-
             NewFileConfigurationScreen NewFileConfiguration = new NewFileConfigurationScreen();
 
-            ConfigFile_panel.Controls.Add(NewFileConfiguration);
+            var result = ShowPopup(NewFileConfiguration, "Important");
 
-            ConfigFile_panel.Visible = true;
+            if (result == DialogResult.OK)
+            {
+                ConfigurationFile_txtbox.Text = NewFileConfiguration.InputConfigFileName;
+                Enable_buttons();
+            }
         }
 
         private void OpenConfiguration_btn_Click(object sender, EventArgs e)
         {
-            ConfigFile_panel.Controls.Clear();
+            OpenFileConfigurationScreen OpenFileConfiguration = new OpenFileConfigurationScreen();
 
-            OpenFileConfigurationScreen NewFileConfiguration = new OpenFileConfigurationScreen();
+            ShowPopup(OpenFileConfiguration, "Important");
+        }
 
-            ConfigFile_panel.Controls.Add(NewFileConfiguration);
+        private DialogResult ShowPopup(UserControl userControl, string title = "Popup")
+        {
+            Form popupForm = new Form
+            {
+                Text = title,
+                StartPosition = FormStartPosition.CenterParent,
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                MinimizeBox = false,
+                MaximizeBox = false,
+                ShowInTaskbar = false,
+                Size = new Size(userControl.Width + 20, userControl.Height + 40)
+            };
 
-            ConfigFile_panel.Visible = true;
+            userControl.Dock = DockStyle.Fill;
+            popupForm.Controls.Add(userControl);
+
+            if (userControl is NewFileConfigurationScreen configScreen)
+            {
+                configScreen.OnConfigSaved += (s, fileName) =>
+                {
+                    popupForm.DialogResult = DialogResult.OK;
+                    popupForm.Close();
+                };
+            }
+
+            return popupForm.ShowDialog();
         }
     }
 }

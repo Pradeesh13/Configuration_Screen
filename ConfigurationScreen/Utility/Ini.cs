@@ -18,7 +18,6 @@ public class Ini
             Load();
         else
         {
-            // Create an empty file if it doesn’t exist
             File.Create(filePath).Dispose();
         }
     }
@@ -61,7 +60,6 @@ public class Ini
     {
         var sb = new StringBuilder();
 
-        // Root-level keys (no section)
         if (ini.ContainsKey("") && ini[""].Count > 0)
         {
             foreach (var kv in ini[""])
@@ -69,7 +67,6 @@ public class Ini
             sb.AppendLine();
         }
 
-        // Sections
         foreach (var section in ini.Where(s => s.Key != ""))
         {
             sb.AppendLine($"[{section.Key}]");

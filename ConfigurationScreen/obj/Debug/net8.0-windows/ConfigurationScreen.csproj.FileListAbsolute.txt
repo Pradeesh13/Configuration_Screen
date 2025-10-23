@@ -52,7 +52,6 @@ C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\o
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.LoginForm.LoginForm.resources
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.Properties.Resources.resources
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.InstrumentConfiguration.InstrumentConfigurationScreen.resources
-C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.ChannelMappinScreen.resources
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.IOChannelMappingScreen.resources
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.IOMappingScreen.resources
 C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.UserConfiguration.UserConfigurationScreen.resources
@@ -74,3 +73,9 @@ E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.PLCScreen.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.FunctionalSequence.CylinderSequenceScreen.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.FunctionalSequence.FunctionalSequenceScreen.resources
+C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.ConfigurationFile.NewFileConfigurationScreen.resources
+C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.ConfigurationFile.OpenFileConfigurationScreen.resources
+C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.FunctionalSequence.CylinderSequenceScreen.resources
+C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.FunctionalSequence.FunctionalSequenceScreen.resources
+C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.ChannelMappingScreen.resources
+C:\Users\prade\Desktop\Projects\C#_Projects\Project_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.PLCScreen.resources
