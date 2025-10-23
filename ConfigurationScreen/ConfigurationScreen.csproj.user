@@ -7,6 +7,18 @@
     <Compile Update="LoginForm\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UserControls\ConfigurationFile\NewFileConfigurationScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\ConfigurationFile\OpenFileConfigurationScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\CylinderSequence\CylinderSequenceScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UserControls\FunctionalSequence\FunctionalSequenceScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UserControls\InstrumentConfiguration\InstrumentConfigurationScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>

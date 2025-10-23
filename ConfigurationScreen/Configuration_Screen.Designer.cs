@@ -32,17 +32,17 @@
             InstrumentConfig_btn = new Button();
             Config_panel = new Panel();
             IOChannelMapping_btn = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            CylinderSequence_btn = new Button();
+            FunctionalSequence_btn = new Button();
             UserConfig_btn = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
+            NewConfiguration_btn = new Button();
+            OpenConfiguration_btn = new Button();
+            SaveConfiguration_btn = new Button();
+            SaveAsConfiguration_btn = new Button();
+            DeleteConfiguration_btn = new Button();
+            SwitchUser_btn = new Button();
+            RollBack_btn = new Button();
+            ExtractZip_btn = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             UserName_txtbox = new TextBox();
@@ -53,6 +53,9 @@
             pictureBox1 = new PictureBox();
             label5 = new Label();
             label4 = new Label();
+            TestSequence_btn = new Button();
+            ConfigFile_panel = new Panel();
+            Config_panel.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -63,9 +66,9 @@
             InstrumentConfig_btn.BackColor = Color.Azure;
             InstrumentConfig_btn.FlatStyle = FlatStyle.Popup;
             InstrumentConfig_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            InstrumentConfig_btn.Location = new Point(35, 243);
+            InstrumentConfig_btn.Location = new Point(35, 270);
             InstrumentConfig_btn.Name = "InstrumentConfig_btn";
-            InstrumentConfig_btn.Size = new Size(171, 52);
+            InstrumentConfig_btn.Size = new Size(171, 50);
             InstrumentConfig_btn.TabIndex = 1;
             InstrumentConfig_btn.Text = "INSTRUMENT\r\nConfiguration\r\n";
             InstrumentConfig_btn.UseVisualStyleBackColor = false;
@@ -74,6 +77,7 @@
             // Config_panel
             // 
             Config_panel.BorderStyle = BorderStyle.FixedSingle;
+            Config_panel.Controls.Add(ConfigFile_panel);
             Config_panel.Location = new Point(249, 96);
             Config_panel.Name = "Config_panel";
             Config_panel.Size = new Size(1623, 880);
@@ -85,39 +89,41 @@
             IOChannelMapping_btn.BackColor = Color.Azure;
             IOChannelMapping_btn.FlatStyle = FlatStyle.Popup;
             IOChannelMapping_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            IOChannelMapping_btn.Location = new Point(35, 298);
+            IOChannelMapping_btn.Location = new Point(35, 325);
             IOChannelMapping_btn.Name = "IOChannelMapping_btn";
-            IOChannelMapping_btn.Size = new Size(171, 52);
+            IOChannelMapping_btn.Size = new Size(171, 50);
             IOChannelMapping_btn.TabIndex = 1;
             IOChannelMapping_btn.Text = "IO CHANNEL\r\nMapping\r\n";
             IOChannelMapping_btn.UseVisualStyleBackColor = false;
             IOChannelMapping_btn.Click += IOChannelMapping_btn_Click;
             // 
-            // button2
+            // CylinderSequence_btn
             // 
-            button2.AutoSize = true;
-            button2.BackColor = Color.Azure;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button2.Location = new Point(35, 353);
-            button2.Name = "button2";
-            button2.Size = new Size(171, 52);
-            button2.TabIndex = 1;
-            button2.Text = "CYLINDER\r\nSequence";
-            button2.UseVisualStyleBackColor = false;
+            CylinderSequence_btn.AutoSize = true;
+            CylinderSequence_btn.BackColor = Color.Azure;
+            CylinderSequence_btn.FlatStyle = FlatStyle.Popup;
+            CylinderSequence_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            CylinderSequence_btn.Location = new Point(35, 380);
+            CylinderSequence_btn.Name = "CylinderSequence_btn";
+            CylinderSequence_btn.Size = new Size(171, 50);
+            CylinderSequence_btn.TabIndex = 1;
+            CylinderSequence_btn.Text = "CYLINDER\r\nSequence";
+            CylinderSequence_btn.UseVisualStyleBackColor = false;
+            CylinderSequence_btn.Click += CylinderSequence_Click;
             // 
-            // button3
+            // FunctionalSequence_btn
             // 
-            button3.AutoSize = true;
-            button3.BackColor = Color.Azure;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button3.Location = new Point(35, 408);
-            button3.Name = "button3";
-            button3.Size = new Size(171, 52);
-            button3.TabIndex = 1;
-            button3.Text = "FUNCTIONAL\r\nSequence";
-            button3.UseVisualStyleBackColor = false;
+            FunctionalSequence_btn.AutoSize = true;
+            FunctionalSequence_btn.BackColor = Color.Azure;
+            FunctionalSequence_btn.FlatStyle = FlatStyle.Popup;
+            FunctionalSequence_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            FunctionalSequence_btn.Location = new Point(35, 435);
+            FunctionalSequence_btn.Name = "FunctionalSequence_btn";
+            FunctionalSequence_btn.Size = new Size(171, 50);
+            FunctionalSequence_btn.TabIndex = 1;
+            FunctionalSequence_btn.Text = "FUNCTIONAL\r\nSequence";
+            FunctionalSequence_btn.UseVisualStyleBackColor = false;
+            FunctionalSequence_btn.Click += FunctionalSequence_Click;
             // 
             // UserConfig_btn
             // 
@@ -125,122 +131,124 @@
             UserConfig_btn.BackColor = Color.Azure;
             UserConfig_btn.FlatStyle = FlatStyle.Popup;
             UserConfig_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            UserConfig_btn.Location = new Point(35, 463);
+            UserConfig_btn.Location = new Point(35, 490);
             UserConfig_btn.Name = "UserConfig_btn";
-            UserConfig_btn.Size = new Size(171, 52);
+            UserConfig_btn.Size = new Size(171, 50);
             UserConfig_btn.TabIndex = 1;
             UserConfig_btn.Text = "USER\r\nConfiguration";
             UserConfig_btn.UseVisualStyleBackColor = false;
             UserConfig_btn.Click += UserConfig_btn_Click;
             // 
-            // button5
+            // NewConfiguration_btn
             // 
-            button5.AutoSize = true;
-            button5.BackColor = Color.Azure;
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button5.Location = new Point(35, 539);
-            button5.Name = "button5";
-            button5.Size = new Size(171, 52);
-            button5.TabIndex = 1;
-            button5.Text = "NEW\r\nConfiguration";
-            button5.UseVisualStyleBackColor = false;
+            NewConfiguration_btn.AutoSize = true;
+            NewConfiguration_btn.BackColor = Color.Azure;
+            NewConfiguration_btn.FlatStyle = FlatStyle.Popup;
+            NewConfiguration_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            NewConfiguration_btn.Location = new Point(35, 565);
+            NewConfiguration_btn.Name = "NewConfiguration_btn";
+            NewConfiguration_btn.Size = new Size(171, 50);
+            NewConfiguration_btn.TabIndex = 1;
+            NewConfiguration_btn.Text = "NEW\r\nConfiguration";
+            NewConfiguration_btn.UseVisualStyleBackColor = false;
+            NewConfiguration_btn.Click += NewConfiguration_btn_Click;
             // 
-            // button6
+            // OpenConfiguration_btn
             // 
-            button6.AutoSize = true;
-            button6.BackColor = Color.Azure;
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button6.Location = new Point(35, 594);
-            button6.Name = "button6";
-            button6.Size = new Size(171, 52);
-            button6.TabIndex = 1;
-            button6.Text = "OPEN\r\nConfiguration";
-            button6.UseVisualStyleBackColor = false;
+            OpenConfiguration_btn.AutoSize = true;
+            OpenConfiguration_btn.BackColor = Color.Azure;
+            OpenConfiguration_btn.FlatStyle = FlatStyle.Popup;
+            OpenConfiguration_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            OpenConfiguration_btn.Location = new Point(35, 620);
+            OpenConfiguration_btn.Name = "OpenConfiguration_btn";
+            OpenConfiguration_btn.Size = new Size(171, 50);
+            OpenConfiguration_btn.TabIndex = 1;
+            OpenConfiguration_btn.Text = "OPEN\r\nConfiguration";
+            OpenConfiguration_btn.UseVisualStyleBackColor = false;
+            OpenConfiguration_btn.Click += OpenConfiguration_btn_Click;
             // 
-            // button7
+            // SaveConfiguration_btn
             // 
-            button7.AutoSize = true;
-            button7.BackColor = Color.Azure;
-            button7.FlatStyle = FlatStyle.Popup;
-            button7.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button7.Location = new Point(35, 649);
-            button7.Name = "button7";
-            button7.Size = new Size(171, 52);
-            button7.TabIndex = 1;
-            button7.Text = "SAVE\r\nConfiguration";
-            button7.UseVisualStyleBackColor = false;
+            SaveConfiguration_btn.AutoSize = true;
+            SaveConfiguration_btn.BackColor = Color.Azure;
+            SaveConfiguration_btn.FlatStyle = FlatStyle.Popup;
+            SaveConfiguration_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            SaveConfiguration_btn.Location = new Point(35, 675);
+            SaveConfiguration_btn.Name = "SaveConfiguration_btn";
+            SaveConfiguration_btn.Size = new Size(171, 50);
+            SaveConfiguration_btn.TabIndex = 1;
+            SaveConfiguration_btn.Text = "SAVE\r\nConfiguration";
+            SaveConfiguration_btn.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // SaveAsConfiguration_btn
             // 
-            button8.AutoSize = true;
-            button8.BackColor = Color.Azure;
-            button8.FlatStyle = FlatStyle.Popup;
-            button8.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button8.Location = new Point(35, 704);
-            button8.Name = "button8";
-            button8.Size = new Size(171, 52);
-            button8.TabIndex = 1;
-            button8.Text = "SAVE AS\r\nConfiguration";
-            button8.UseVisualStyleBackColor = false;
+            SaveAsConfiguration_btn.AutoSize = true;
+            SaveAsConfiguration_btn.BackColor = Color.Azure;
+            SaveAsConfiguration_btn.FlatStyle = FlatStyle.Popup;
+            SaveAsConfiguration_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            SaveAsConfiguration_btn.Location = new Point(35, 730);
+            SaveAsConfiguration_btn.Name = "SaveAsConfiguration_btn";
+            SaveAsConfiguration_btn.Size = new Size(171, 50);
+            SaveAsConfiguration_btn.TabIndex = 1;
+            SaveAsConfiguration_btn.Text = "SAVE AS\r\nConfiguration";
+            SaveAsConfiguration_btn.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // DeleteConfiguration_btn
             // 
-            button9.AutoSize = true;
-            button9.BackColor = Color.Azure;
-            button9.FlatStyle = FlatStyle.Popup;
-            button9.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button9.Location = new Point(35, 759);
-            button9.Name = "button9";
-            button9.Size = new Size(171, 52);
-            button9.TabIndex = 1;
-            button9.Text = "DELETE\r\nConfiguration";
-            button9.UseVisualStyleBackColor = false;
+            DeleteConfiguration_btn.AutoSize = true;
+            DeleteConfiguration_btn.BackColor = Color.Azure;
+            DeleteConfiguration_btn.FlatStyle = FlatStyle.Popup;
+            DeleteConfiguration_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            DeleteConfiguration_btn.Location = new Point(35, 785);
+            DeleteConfiguration_btn.Name = "DeleteConfiguration_btn";
+            DeleteConfiguration_btn.Size = new Size(171, 50);
+            DeleteConfiguration_btn.TabIndex = 1;
+            DeleteConfiguration_btn.Text = "DELETE\r\nConfiguration";
+            DeleteConfiguration_btn.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // SwitchUser_btn
             // 
-            button10.AutoSize = true;
-            button10.BackColor = Color.Azure;
-            button10.FlatStyle = FlatStyle.Popup;
-            button10.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button10.Location = new Point(35, 814);
-            button10.Name = "button10";
-            button10.Size = new Size(171, 52);
-            button10.TabIndex = 1;
-            button10.Text = "SWITCH\r\nUser";
-            button10.UseVisualStyleBackColor = false;
+            SwitchUser_btn.AutoSize = true;
+            SwitchUser_btn.BackColor = Color.Azure;
+            SwitchUser_btn.FlatStyle = FlatStyle.Popup;
+            SwitchUser_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            SwitchUser_btn.Location = new Point(35, 840);
+            SwitchUser_btn.Name = "SwitchUser_btn";
+            SwitchUser_btn.Size = new Size(171, 50);
+            SwitchUser_btn.TabIndex = 1;
+            SwitchUser_btn.Text = "SWITCH\r\nUser";
+            SwitchUser_btn.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // RollBack_btn
             // 
-            button11.AutoSize = true;
-            button11.BackColor = Color.Azure;
-            button11.FlatStyle = FlatStyle.Popup;
-            button11.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button11.Location = new Point(35, 869);
-            button11.Name = "button11";
-            button11.Size = new Size(171, 52);
-            button11.TabIndex = 1;
-            button11.Text = "ROLLBACK\r\nConfiguration";
-            button11.UseVisualStyleBackColor = false;
+            RollBack_btn.AutoSize = true;
+            RollBack_btn.BackColor = Color.Azure;
+            RollBack_btn.FlatStyle = FlatStyle.Popup;
+            RollBack_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            RollBack_btn.Location = new Point(35, 895);
+            RollBack_btn.Name = "RollBack_btn";
+            RollBack_btn.Size = new Size(171, 50);
+            RollBack_btn.TabIndex = 1;
+            RollBack_btn.Text = "ROLLBACK\r\nConfiguration";
+            RollBack_btn.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // ExtractZip_btn
             // 
-            button12.AutoSize = true;
-            button12.BackColor = Color.Azure;
-            button12.FlatStyle = FlatStyle.Popup;
-            button12.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            button12.Location = new Point(35, 924);
-            button12.Name = "button12";
-            button12.Size = new Size(171, 52);
-            button12.TabIndex = 1;
-            button12.Text = "EXTRACT\r\nZIP";
-            button12.UseVisualStyleBackColor = false;
+            ExtractZip_btn.AutoSize = true;
+            ExtractZip_btn.BackColor = Color.Azure;
+            ExtractZip_btn.FlatStyle = FlatStyle.Popup;
+            ExtractZip_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            ExtractZip_btn.Location = new Point(35, 950);
+            ExtractZip_btn.Name = "ExtractZip_btn";
+            ExtractZip_btn.Size = new Size(171, 50);
+            ExtractZip_btn.TabIndex = 1;
+            ExtractZip_btn.Text = "EXTRACT\r\nZIP";
+            ExtractZip_btn.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 11F);
-            textBox1.Location = new Point(35, 63);
+            textBox1.Location = new Point(35, 43);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(171, 27);
             textBox1.TabIndex = 2;
@@ -248,7 +256,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 11F);
-            textBox2.Location = new Point(35, 178);
+            textBox2.Location = new Point(35, 158);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(171, 27);
             textBox2.TabIndex = 2;
@@ -256,7 +264,7 @@
             // UserName_txtbox
             // 
             UserName_txtbox.Font = new Font("Segoe UI", 11F);
-            UserName_txtbox.Location = new Point(35, 120);
+            UserName_txtbox.Location = new Point(35, 100);
             UserName_txtbox.Name = "UserName_txtbox";
             UserName_txtbox.ReadOnly = true;
             UserName_txtbox.Size = new Size(171, 27);
@@ -267,7 +275,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label1.Location = new Point(39, 38);
+            label1.Location = new Point(39, 18);
             label1.Name = "label1";
             label1.Size = new Size(167, 21);
             label1.TabIndex = 3;
@@ -277,7 +285,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(70, 96);
+            label2.Location = new Point(70, 76);
             label2.Name = "label2";
             label2.Size = new Size(94, 21);
             label2.TabIndex = 3;
@@ -287,7 +295,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(70, 153);
+            label3.Location = new Point(70, 133);
             label3.Name = "label3";
             label3.Size = new Size(93, 21);
             label3.TabIndex = 3;
@@ -337,6 +345,26 @@
             label4.TabIndex = 3;
             label4.Text = "VERSION 1.0";
             // 
+            // TestSequence_btn
+            // 
+            TestSequence_btn.AutoSize = true;
+            TestSequence_btn.BackColor = Color.Azure;
+            TestSequence_btn.FlatStyle = FlatStyle.Popup;
+            TestSequence_btn.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            TestSequence_btn.Location = new Point(35, 212);
+            TestSequence_btn.Name = "TestSequence_btn";
+            TestSequence_btn.Size = new Size(171, 50);
+            TestSequence_btn.TabIndex = 1;
+            TestSequence_btn.Text = "TEST\r\nSequence";
+            TestSequence_btn.UseVisualStyleBackColor = false;
+            // 
+            // ConfigFile_panel
+            // 
+            ConfigFile_panel.Location = new Point(519, 300);
+            ConfigFile_panel.Name = "ConfigFile_panel";
+            ConfigFile_panel.Size = new Size(631, 310);
+            ConfigFile_panel.TabIndex = 0;
+            // 
             // Configuration_Screen
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -350,24 +378,26 @@
             Controls.Add(UserName_txtbox);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
+            Controls.Add(ExtractZip_btn);
+            Controls.Add(RollBack_btn);
+            Controls.Add(SwitchUser_btn);
+            Controls.Add(DeleteConfiguration_btn);
             Controls.Add(UserConfig_btn);
-            Controls.Add(button8);
-            Controls.Add(button3);
-            Controls.Add(button7);
-            Controls.Add(button2);
-            Controls.Add(button6);
+            Controls.Add(SaveAsConfiguration_btn);
+            Controls.Add(FunctionalSequence_btn);
+            Controls.Add(SaveConfiguration_btn);
+            Controls.Add(CylinderSequence_btn);
+            Controls.Add(OpenConfiguration_btn);
             Controls.Add(IOChannelMapping_btn);
-            Controls.Add(button5);
+            Controls.Add(NewConfiguration_btn);
+            Controls.Add(TestSequence_btn);
             Controls.Add(InstrumentConfig_btn);
             Controls.Add(Config_panel);
             Font = new Font("Segoe UI", 9F);
             Name = "Configuration_Screen";
             Text = "Configuration Screen";
             FormClosing += Configuration_Screen_FormClosing;
+            Config_panel.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -379,17 +409,17 @@
         private Button InstrumentConfig_btn;
         private Panel Config_panel;
         private Button IOChannelMapping_btn;
-        private Button button2;
-        private Button button3;
+        private Button CylinderSequence_btn;
+        private Button FunctionalSequence_btn;
         private Button UserConfig_btn;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
+        private Button NewConfiguration_btn;
+        private Button OpenConfiguration_btn;
+        private Button SaveConfiguration_btn;
+        private Button SaveAsConfiguration_btn;
+        private Button DeleteConfiguration_btn;
+        private Button SwitchUser_btn;
+        private Button RollBack_btn;
+        private Button ExtractZip_btn;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox UserName_txtbox;
@@ -400,5 +430,7 @@
         private Label label5;
         private Label label4;
         private PictureBox pictureBox1;
+        private Button TestSequence_btn;
+        private Panel ConfigFile_panel;
     }
 }

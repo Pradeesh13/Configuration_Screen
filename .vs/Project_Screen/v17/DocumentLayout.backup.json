@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "E:\\Projects\\C#\\Configuration_Screen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\usercontrols\\userconfiguration\\userconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\userconfiguration\\userconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\configuration_screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\configuration_screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\utility\\ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\utility\\ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\configuration_screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\configuration_screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\usercontrols\\userconfiguration\\userconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\userconfiguration\\userconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\usercontrols\\configurationfile\\newfileconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\configurationfile\\newfileconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\loginform\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|e:\\projects\\c#\\configuration_screen\\configurationscreen\\usercontrols\\configurationfile\\openfileconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58540738-4006-48A4-BF6F-50C142C4767E}|ConfigurationScreen\\ConfigurationScreen.csproj|solutionrelative:configurationscreen\\usercontrols\\configurationfile\\openfileconfigurationscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,53 +34,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ini.cs",
-              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\Utility\\Ini.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\Utility\\Ini.cs",
-              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\Utility\\Ini.cs",
-              "RelativeToolTip": "ConfigurationScreen\\Utility\\Ini.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAApwH8AAAAEAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "OpenFileConfigurationScreen.cs [Design]",
+              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\ConfigurationFile\\OpenFileConfigurationScreen.cs",
+              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\ConfigurationFile\\OpenFileConfigurationScreen.cs",
+              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\ConfigurationFile\\OpenFileConfigurationScreen.cs [Design]",
+              "RelativeToolTip": "ConfigurationScreen\\UserControls\\ConfigurationFile\\OpenFileConfigurationScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T10:58:48.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserConfigurationScreen.cs",
-              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
-              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
-              "RelativeToolTip": "ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAApwKsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:58:38.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserConfigurationScreen.cs [Design]",
-              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs",
-              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs [Design]",
-              "RelativeToolTip": "ConfigurationScreen\\UserControls\\UserConfiguration\\UserConfigurationScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T09:58:36.223Z",
+              "WhenOpened": "2025-10-23T12:35:36.834Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\LoginForm\\LoginForm.cs",
-              "RelativeDocumentMoniker": "ConfigurationScreen\\LoginForm\\LoginForm.cs",
-              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\LoginForm\\LoginForm.cs",
-              "RelativeToolTip": "ConfigurationScreen\\LoginForm\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "NewFileConfigurationScreen.cs [Design]",
+              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\ConfigurationFile\\NewFileConfigurationScreen.cs",
+              "RelativeDocumentMoniker": "ConfigurationScreen\\UserControls\\ConfigurationFile\\NewFileConfigurationScreen.cs",
+              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\UserControls\\ConfigurationFile\\NewFileConfigurationScreen.cs [Design]",
+              "RelativeToolTip": "ConfigurationScreen\\UserControls\\ConfigurationFile\\NewFileConfigurationScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:02:03.065Z",
+              "WhenOpened": "2025-10-23T12:34:58.002Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Configuration_Screen.cs [Design]",
+              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\Configuration_Screen.cs",
+              "RelativeDocumentMoniker": "ConfigurationScreen\\Configuration_Screen.cs",
+              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\Configuration_Screen.cs [Design]",
+              "RelativeToolTip": "ConfigurationScreen\\Configuration_Screen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:12:52.825Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Configuration_Screen.cs",
+              "DocumentMoniker": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\Configuration_Screen.cs",
+              "RelativeDocumentMoniker": "ConfigurationScreen\\Configuration_Screen.cs",
+              "ToolTip": "E:\\Projects\\C#\\Configuration_Screen\\ConfigurationScreen\\Configuration_Screen.cs",
+              "RelativeToolTip": "ConfigurationScreen\\Configuration_Screen.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAIwIMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T07:06:50.642Z",
               "EditorCaption": ""
             }
           ]

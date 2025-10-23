@@ -72,3 +72,5 @@ E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.ChannelMappingScreen.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.DaqScreen.resources
 E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.IOChannelMapping.PLCScreen.resources
+E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.FunctionalSequence.CylinderSequenceScreen.resources
+E:\Projects\C#\Configuration_Screen\ConfigurationScreen\obj\Debug\net8.0-windows\ConfigurationScreen.UserControls.FunctionalSequence.FunctionalSequenceScreen.resources

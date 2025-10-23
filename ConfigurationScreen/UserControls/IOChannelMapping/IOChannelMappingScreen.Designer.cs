@@ -36,6 +36,9 @@
             // ChannelMapping_btn
             // 
             ChannelMapping_btn.BackColor = Color.Gainsboro;
+            ChannelMapping_btn.Cursor = Cursors.Hand;
+            ChannelMapping_btn.FlatAppearance.BorderColor = Color.Black;
+            ChannelMapping_btn.FlatAppearance.BorderSize = 2;
             ChannelMapping_btn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             ChannelMapping_btn.Location = new Point(0, 1);
             ChannelMapping_btn.Name = "ChannelMapping_btn";
@@ -48,6 +51,8 @@
             // IOMapping_btn
             // 
             IOMapping_btn.BackColor = Color.Gainsboro;
+            IOMapping_btn.FlatAppearance.BorderColor = Color.Black;
+            IOMapping_btn.FlatAppearance.BorderSize = 2;
             IOMapping_btn.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             IOMapping_btn.Location = new Point(819, 1);
             IOMapping_btn.Name = "IOMapping_btn";

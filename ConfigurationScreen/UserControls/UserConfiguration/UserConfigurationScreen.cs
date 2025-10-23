@@ -122,7 +122,7 @@ namespace ConfigurationScreen.UserControls.UserConfiguration
 
         private void UpdateUser_picbox_Click(object sender, EventArgs e)
         {
-            if (UserList_grid.Rows.Count == 1)
+            if (UserList_grid.Rows.Count >= 1)
             {
                 try
                 {

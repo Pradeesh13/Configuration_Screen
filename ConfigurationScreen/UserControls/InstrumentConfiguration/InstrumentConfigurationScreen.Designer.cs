@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstrumentConfigurationScreen));
             DeviceControls_panel = new Panel();
             label22 = new Label();
@@ -636,6 +637,14 @@
             DeviceList_grid.AllowUserToDeleteRows = false;
             DeviceList_grid.BackgroundColor = SystemColors.ButtonHighlight;
             DeviceList_grid.BorderStyle = BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            DeviceList_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             DeviceList_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DeviceList_grid.Columns.AddRange(new DataGridViewColumn[] { DeviceAdded });
             DeviceList_grid.Location = new Point(127, 91);
